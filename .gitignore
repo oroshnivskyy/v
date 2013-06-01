@@ -4,6 +4,6 @@ composer.phar
 composer.lock
 .DS_Store
 /tmp
-/site-log/php.log
+/site-log
 /sess
 /.idea
