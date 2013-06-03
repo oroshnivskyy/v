@@ -1,0 +1,36 @@
+.cloud-zoom-lens {
+    margin: 0;
+    background-color: #fff;
+    cursor: move;
+}
+
+.cloud-zoom-title {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute !important;
+    background-color: #000;
+    color: #fff;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    top: 0px;
+}
+
+#cloud-zoom-big {
+    overflow: hidden;
+    left: -190px !important;
+    top: -190px !important;
+    width: 308px !important;
+    height: 308px !important;
+}
+
+.cloud-zoom-loading {
+    color: white;
+    background: #222;
+    padding: 3px;
+}
+
+.product-image .mousetrap {
+    z-index: 100 !important;
+}

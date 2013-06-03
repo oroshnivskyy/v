@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Вход в систему</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="description" content="Default Description"/>
+<meta name="keywords" content="Magento, Varien, E-commerce"/>
+<meta name="robots" content="INDEX,FOLLOW"/>
+<script type="text/javascript">
+//<![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-7078796-5","ga_bs":"2"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{cloudflare:"../../../../cdn-cgi/nexp/abv=378448694/index.htm"},atok:"edd23b83a894393d34de14a3bdc27bb8",zone:"template-help.com",rocket:"0",apps:{"ga_key":{"ua":"UA-7078796-5","ga_bs":"2"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="../../../../ajax.cloudflare.com/cdn-cgi/nexp/abv=4035706501/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<link rel="icon" HREF="../../../skin/frontend/default/theme423/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" HREF="../../../skin/frontend/default/theme423/favicon.ico" type="image/x-icon"/>
+<link href="../../../../../fonts.googleapis.com/css@family=Playfair+Display" rel='stylesheet' type='text/css'>
+<link href="../../../../../fonts.googleapis.com/css@family=Open+Sans" rel='stylesheet' type='text/css'>
+<link href="../../../../../fonts.googleapis.com/css@family=Open+Sans+Condensed-3A300" rel='stylesheet' type='text/css'>
+<link href="../../../../../fonts.googleapis.com/css@family=Berkshire+Swash" rel='stylesheet' type='text/css'>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/jquery-1.7.min.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/superfish.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/scripts.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/easyTooltip.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" SRC="../../../skin/frontend/default/theme423/js/jquery.iosslider.min.js"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://livedemo00.template-help.com/magento_42124/js/blank.html';
+    var BLANK_IMG = 'http://livedemo00.template-help.com/magento_42124/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<!--[if lt IE 8]>
+<div style=' clear: both; text-align:center; position: relative;'>
+ <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<style>
+	body {
+		min-width: 960px !important;
+	}
+	</style>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../../skin/frontend/default/theme423/css/styles.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="../../../skin/frontend/default/theme423/css/responsive.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="../../../skin/frontend/default/theme423/css/superfish.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="../../../skin/frontend/default/theme423/css/camera.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="../../../skin/frontend/base/default/css/widgets.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="../../../skin/frontend/default/theme423/css/ecommerceteam/cloud-zoom.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="../../../skin/frontend/default/theme423/css/print.css" media="print"/>
+<script type="text/javascript" SRC="../../../js/prototype/prototype.js"></script>
+<script type="text/javascript" SRC="../../../js/lib/ccard.js"></script>
+<script type="text/javascript" SRC="../../../js/prototype/validation.js"></script>
+<script type="text/javascript" SRC="../../../js/scriptaculous/builder.js"></script>
+<script type="text/javascript" SRC="../../../js/scriptaculous/effects.js"></script>
+<script type="text/javascript" SRC="../../../js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" SRC="../../../js/scriptaculous/controls.js"></script>
+<script type="text/javascript" SRC="../../../js/scriptaculous/slider.js"></script>
+<script type="text/javascript" SRC="../../../js/varien/js.js"></script>
+<script type="text/javascript" SRC="../../../js/varien/form.js"></script>
+<script type="text/javascript" SRC="../../../js/mage/translate.js"></script>
+<script type="text/javascript" SRC="../../../js/mage/cookies.js"></script>
+<script type="text/javascript" SRC="../../../js/ecommerceteam/cloud-zoom.1.0.2.min.js"></script>
+<script type="text/javascript" SRC="../../../js/mage/captcha.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://livedemo00.template-help.com/magento_42124/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://livedemo00.template-help.com/magento_42124/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '../../../../magento_42124';
+Mage.Cookies.domain   = '.livedemo00.template-help.com';
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0432\u0430\u0440\u0438\u0430\u043d\u0442.","This is a required field.":"\u042d\u0442\u043e \u043f\u043e\u043b\u0435 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0434\u043b\u044f \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f.","Please enter a valid number in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0435 \u0447\u0438\u0441\u043b\u043e.","The value is not within the specified range.":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0432\u0445\u043e\u0434\u0438\u0442 \u0432 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0446\u0438\u0444\u0440\u044b. \u0418\u0437\u0431\u0435\u0433\u0430\u0439\u0442\u0435 \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432 \u0438\u043b\u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432, \u043d\u0430\u043f\u043e\u0434\u043e\u0431\u0438\u0435 \u0442\u043e\u0447\u0435\u043a \u0438 \u0437\u0430\u043f\u044f\u0442\u044b\u0445.","Please use letters only (a-z or A-Z) in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z), \u0446\u0438\u0444\u0440\u044b (0-9) \u0438\u043b\u0438 \u043f\u043e\u0434\u0447\u0451\u0440\u043a\u0438\u0432\u0430\u043d\u0438\u044f(_). \u041f\u0435\u0440\u0432\u044b\u0439 \u0441\u0438\u043c\u0432\u043e\u043b \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0431\u0443\u043a\u0432\u043e\u0439.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z) \u0438\u043b\u0438 \u0446\u0438\u0444\u0440\u044b (0-9). \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u044b.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z), \u0446\u0438\u0444\u0440\u044b (0-9), \u043f\u0440\u043e\u0431\u0435\u043b\u044b \u0438\u043b\u0438 #.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, (123) 456-7890 \u0438\u043b\u0438 123-456-7890.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0444\u0430\u043a\u0441\u0430. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, (123) 456-7890 \u0438\u043b\u0438 123-456-7890.","Please enter a valid date.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443.","Please enter a valid email address. For example johndoe@domain.com.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0439 \u043f\u043e\u0447\u0442\u044b (email). \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, ivanivanov@domain.com.","Please use only visible characters and spaces.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0438\u0434\u0438\u043c\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0438 \u043f\u0440\u043e\u0431\u0435\u043b\u044b.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 6 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432. \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u043f\u0435\u0440\u0435\u0434 \u0438 \u043f\u043e\u0441\u043b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 \u0431\u0443\u0434\u0443\u0442 \u043f\u0440\u043e\u0438\u0433\u043d\u043e\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u044b.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 6 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432. \u041f\u0430\u0440\u043e\u043b\u044c \u0434\u043e\u043b\u0436\u0435\u043d \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u043a\u0430\u043a \u0431\u0443\u043a\u0432\u044b, \u0442\u0430\u043a \u0438 \u0446\u0438\u0444\u0440\u044b.","Please make sure your passwords match.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u0443\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044c, \u0447\u0442\u043e \u0432\u0430\u0448\u0438 \u043f\u0430\u0440\u043e\u043b\u0438 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u044e\u0442.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441. \u041d\u0435 \u0437\u0430\u0431\u0443\u0434\u044c\u0442\u0435 \u0443\u043a\u0430\u0437\u0430\u0442\u044c \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b (http:\/\/, https:\/\/ \u0438\u043b\u0438 ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, http:\/\/www.example.com \u0438\u043b\u0438 www.example.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b URL Key. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \"example-page\", \"example-page.html\" \u0438\u043b\u0438 \"anotherlevel\/example-page\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 XML-\u0438\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, something_1, block5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u043e\u0447\u0442\u043e\u0432\u044b\u0439 \u0438\u043d\u0434\u0435\u043a\u0441. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 9060 \u0438\u043b\u0438 90602-1234.","Please enter a valid zip code.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u043e\u0447\u0442\u043e\u0432\u044b\u0439 \u0438\u043d\u0434\u0435\u043a\u0441.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0434\u043b\u044f \u0434\u0430\u0442\u044b \u0444\u043e\u0440\u043c\u0430\u0442: dd\/mm\/yyyy. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 17\/03\/2006 \u0434\u043b\u044f 17-\u0433\u043e \u043c\u0430\u0440\u0442\u0430 2006 \u0433\u043e\u0434\u0430.","Please enter a valid $ amount. For example $100.00.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0435\u043d\u0435\u0436\u043d\u0443\u044e \u0432\u0435\u043b\u0438\u0447\u0438\u043d\u0443. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, $100.00.","Please select one of the above options.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0438\u0437 \u0432\u044b\u0448\u0435\u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0445 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432.","Please select one of the options.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0438\u0437 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432.","Please select State\/Province.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0448\u0442\u0430\u0442\/\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044e.","Please enter a number greater than 0 in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u0447\u0438\u0441\u043b\u043e \u0431\u043e\u043b\u044c\u0448\u0435 0.","Please enter a number 0 or greater in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u0447\u0438\u0441\u043b\u043e \u0431\u043e\u043b\u044c\u0448\u0435 0 \u0438\u043b\u0438 0.","Please enter a valid credit card number.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Credit card number does not match credit card type.":"\u041d\u043e\u043c\u0435\u0440 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b \u043d\u0435 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u0435\u0442 \u0441 \u0442\u0438\u043f\u043e\u043c \u043a\u0430\u0440\u0442\u044b","Card type does not match credit card number.":"\u0422\u0438\u043f \u043a\u0430\u0440\u0442\u044b \u043d\u0435 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u0435\u0442 \u0441 \u043d\u043e\u043c\u0435\u0440\u043e\u043c \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Incorrect credit card expiration date.":"\u041d\u0435\u0432\u0435\u0440\u043d\u0430\u044f \u0434\u0430\u0442\u0430 \u0438\u0441\u0442\u0435\u0447\u0435\u043d\u0438\u044f \u0441\u0440\u043e\u043a\u0430 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0440\u0430\u0441\u0447\u0451\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b","Please enter a valid credit card verification number.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0432\u0435\u0440\u043e\u0447\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e CSS - \u0434\u043b\u0438\u043d\u0443. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 100px \u0438\u043b\u0438 77pt \u0438\u043b\u0438 20em \u0438\u043b\u0438 .5ex \u0438\u043b\u0438 50%.","Text length does not satisfy specified text range.":"\u0414\u043b\u0438\u043d\u043d\u0430 \u0442\u0435\u043a\u0441\u0442\u0430 \u043d\u0435 \u0443\u0434\u043e\u0432\u043b\u0435\u0442\u0432\u043e\u0440\u044f\u0435\u0442 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u043c\u0443 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0443 \u0442\u0435\u043a\u0441\u0442\u0430.","Please enter a number lower than 100.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0447\u0438\u0441\u043b\u043e \u043c\u0435\u043d\u044c\u0448\u0435 100.","Please enter issue number or start date for switch\/solo card type.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0432\u043e\u043f\u0440\u043e\u0441\u0430 \u0438\u043b\u0438 \u0434\u0430\u0442\u0443 \u043d\u0430\u0447\u0430\u043b\u0430 \u0434\u043b\u044f \u0442\u0438\u043f\u0430 \u043a\u0430\u0440\u0442\u044b switch\/solo.","Please-2520wait,-2520loading..-2E":"../../../../u041f/u043e/u0436/u0430/u043b/u0443/u0439/u0441/u0442/u0430,%20/u043f/u043e/u0434/u043e/u0436/u0434C15F028C","This date is a required value.":"\u042d\u0442\u0430 \u0434\u0430\u0442\u0430 - \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435.","Please enter a valid day (1-%d).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043d\u044c (1-%d).","Please enter a valid month (1-12).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043c\u0435\u0441\u044f\u0446 (1-12).","Please enter a valid year (1900-%d).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0433\u043e\u0434 (1900-%d).","Please enter a valid full date":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u043f\u043e\u043b\u043d\u0443\u044e \u0434\u0430\u0442\u0443.","Please enter a valid date between %s and %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u043c\u0435\u0436\u0434\u0443 %s \u0438 %s","Please enter a valid date equal to or greater than %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u0440\u0430\u0432\u043d\u0443\u044e \u0438\u043b\u0438 \u0431\u043e\u043b\u044c\u0448\u0435 \u0447\u0435\u043c %s","Please enter a valid date less than or equal to %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u0440\u0430\u0432\u043d\u0443\u044e \u0438\u043b\u0438 \u043c\u0435\u043d\u044c\u0448\u0435 \u0447\u0435\u043c %s","Complete":"\u0417\u0430\u0432\u0435\u0440\u0448\u0451\u043d","Add Products":"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0442\u043e\u0432\u0430\u0440\u044b","Please choose to register or to checkout as a guest":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0441\u0434\u0435\u043b\u0430\u0439\u0442\u0435 \u0432\u044b\u0431\u043e\u0440: \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u0438\u043b\u0438 \u043e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437 \u0431\u0435\u0437 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"\u0412\u0430\u0448 \u0437\u0430\u043a\u0430\u0437 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d \u0432 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u043f\u043e\u0441\u043a\u043e\u043b\u044c\u043a\u0443 \u0434\u043b\u044f \u043d\u0435\u0433\u043e \u043d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u043c\u0435\u0442\u043e\u0434\u043e\u0432 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u043d\u0435\u0441\u0438\u0442\u0435 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u0432 \u0430\u0434\u0440\u0435\u0441 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438.","Please specify payment method.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0443\u043a\u0430\u0436\u0438\u0442\u0435 \u043c\u0435\u0442\u043e\u0434 \u043e\u043f\u043b\u0430\u0442\u044b.","Your order cannot be completed at this time as there is no payment methods available for it.":"\u0412\u0430\u0448 \u0437\u0430\u043a\u0430\u0437 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d \u0432 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u043f\u043e\u0441\u043a\u043e\u043b\u044c\u043a\u0443 \u0434\u043b\u044f \u043d\u0435\u0433\u043e \u043d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u043c\u0435\u0442\u043e\u0434\u043e\u0432 \u043e\u043f\u043b\u0430\u0442\u044b."});
+        //]]></script><script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7078796-5']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? '../../../../../https@ssl/index.htm' : '../../../../../www/index.htm') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body class=" customer-account-login">
+<div class="wrapper">
+<noscript>
+<div class="global-site-notice noscript">
+<div class="notice-inner">
+<p>
+<strong>JavaScript seems to be disabled in your browser.</strong><br/>
+Вы должны включить JavaScript в вашем браузере, чтобы использовать функциональные возможности этого сайта. </p>
+</div>
+</div>
+</noscript>
+<div class="page">
+<div class="header-container">
+<div class="container_24">
+<div class="grid_24">
+<div class="header">
+<div class="header-buttons">
+<div class="row-1">
+<div class="header-button top-login">
+<ul class="links">
+<li class="first last"><a HREF="index.htm" title="Войти" class="Login_link">Войти</a></li>
+</ul>
+</div>
+<div class="header-button menu-list">
+<a href="#"></a>
+<ul class="links">
+<li class="first"><a HREF="../index.htm" title="Моя учётная запись">Моя учётная запись</a></li>
+<li><a HREF="../../../checkout/cart/index.htm" title="Моя корзина" class="top-link-cart">Моя корзина</a></li>
+<li><a HREF="../../../checkout/index.htm" title="Оформить заказ" class="top-link-checkout">Оформить заказ</a></li>
+<li class=" last"><a HREF="../../../wishlist/index.htm" title="Мой лист пожеланий">Мой лист пожеланий</a></li>
+</ul>
+</div>
+<div class="header-button currency-list">
+<a href="#">$</a>
+<ul>
+<li>
+<a HREF="../../../directory/currency/switch/currency/GBP/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVsc9938E7A3" title="GBP">Английский фунт стерлингов - GBP</a>
+</li>
+<li>
+<a HREF="../../../directory/currency/switch/currency/EUR/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscAEFBADAE" title="EUR">Евро - EUR</a>
+</li>
+<li>
+<a HREF="../../../directory/currency/switch/currency/USD/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscBB55956F" title="USD">Доллар США - USD</a>
+</li>
+</ul>
+</div>
+<div class="header-button lang-list">
+<a href="#"></a>
+<ul>
+<li>
+<a HREF="@___store=english&___from_store=russian" title="en_US">English</a>
+<span>
+</span>
+</li>
+<li>
+<a HREF="@___store=german&___from_store=russian" title="de_DE">German</a>
+<span>
+</span>
+</li>
+<li>
+<a HREF="@___store=spanish&___from_store=russian" title="es_ES">Spanish</a>
+<span>
+</span>
+</li>
+<li>
+<a HREF="@___store=russian&___from_store=russian" title="ru_RU">Russian</a>
+<span>
+ru </span>
+</li>
+</ul>
+</div>
+</div>
+<div class="quick-access">
+<div class="header-links">
+<ul class="links">
+<li class="first last"><a HREF="index.htm" title="Войти" class="Login_link">Войти</a></li>
+</ul>
+<ul class="links">
+<li class="first"><a HREF="../index.htm" title="Моя учётная запись">Моя учётная запись</a></li>
+<li><a HREF="../../../checkout/cart/index.htm" title="Моя корзина" class="top-link-cart">Моя корзина</a></li>
+<li><a HREF="../../../checkout/index.htm" title="Оформить заказ" class="top-link-checkout">Оформить заказ</a></li>
+<li class=" last"><a HREF="../../../wishlist/index.htm" title="Мой лист пожеланий">Мой лист пожеланий</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<a HREF="../../../index.htm" title="Magento Commerce" class="logo"><strong>Magento Commerce</strong><img SRC="../../../skin/frontend/default/theme423/images/logo.png" alt="Magento Commerce"/></a>
+<div class="clear"></div>
+<div class="row-2">
+<div class="block-cart-header">
+<div class="block-content">
+<p class="empty"><span class="cart-title">Моя корзина:</span>0 товаров</p>
+</div>
+</div>
+<script>
+	jQuery('.block-cart-header .cart-content').hide();
+	if (jQuery('.container_24').width() < 800) {
+		jQuery('.block-cart-header .summary, .block-cart-header .cart-content').click(function(){
+				jQuery('.block-cart-header .cart-content').stop(true, true).slideToggle(300);
+			}
+		)
+	}
+	else {
+		jQuery('.block-cart-header .summary, .block-cart-header .cart-content').hover(
+			function(){jQuery('.block-cart-header .cart-content').stop(true, true).slideDown(400);},
+			function(){	jQuery('.block-cart-header .cart-content').stop(true, true).delay(400).slideUp(300);}
+		);
+	}
+</script> <p class="welcome-msg">Добро пожаловать в наш интернет-магазин! </p>
+<div class="clear"></div>
+<form id="search_mini_form" action="http://livedemo00.template-help.com/magento_42124/catalogsearch/result/" method="get">
+<div class="form-search">
+<label for="search">Поиск:</label>
+<input id="search" type="text" name="q" value="" class="input-text" maxlength="128"/>
+<button type="submit" title="Поиск" class="button"><span><span>Поиск</span></span></button>
+<div id="search_autocomplete" class="search-autocomplete"></div>
+<script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+            searchForm.initAutocomplete('../../../catalogsearch/ajax/suggest/index.htm', 'search_autocomplete');
+        //]]>
+        </script>
+</div>
+</form>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="nav-container">
+<div class="container_24">
+<div class="grid_24">
+<div id="menu-icon">Категории</div>
+<ul id="nav" class="sf-menu">
+<li class="level0 nav-1 first level-top"><a HREF="../../../bracelets.html" class="level-top"><span>Bracelets</span></a></li><li class="level0 nav-2 level-top parent"><a HREF="../../../earrings.html" class="level-top"><span>Earrings</span></a><ul class="level0"><li class="level1 nav-2-1 first"><a HREF="../../../earrings/glass-earrings.html"><span>Glass Earrings</span></a></li><li class="level1 nav-2-2"><a HREF="../../../earrings/metal-earrings.html"><span>Metal Earrings</span></a></li><li class="level1 nav-2-3 last"><a HREF="../../../earrings/plastic-earrings.html"><span>Plastic Earrings</span></a></li></ul></li><li class="level0 nav-3 level-top"><a HREF="../../../neclaces.html" class="level-top"><span>Necklaces</span></a></li><li class="level0 nav-4 level-top"><a HREF="../../../rings.html" class="level-top"><span>Rings</span></a></li><li class="level0 nav-5 last level-top"><a HREF="../../../sets.html" class="level-top"><span>Sets</span></a></li> </ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="main-container col1-layout">
+<div class="container_24">
+<div class="grid_24">
+<div class="main">
+<div class="col-main alpha grid_24 omega">
+<div class="account-login">
+<div class="page-title">
+<h1>Страница авторизации</h1>
+</div>
+<form action="http://livedemo00.template-help.com/magento_42124/customer/account/loginPost/" method="post" id="login-form">
+<div class="col2-set">
+<div class="wrapper">
+<div class="registered-users-wrapper grid_12 omega">
+<div class="col-2 registered-users">
+<div class="content">
+<h2>Зарегистрированные клиенты</h2>
+<p>Если у вас есть учётная запись на нашем сайте, пожалуйста, авторизируйтесь.</p>
+<ul class="form-list">
+<li>
+<label for="email" class="required"><em>*</em>Адрес электронной почты (email)</label>
+<div class="input-box">
+<input type="email" name="login[username]" value="" id="email" class="input-text required-entry validate-email" title="Адрес электронной почты (email)"/>
+</div>
+</li>
+<li>
+<label for="pass" class="required"><em>*</em>Пароль</label>
+<div class="input-box">
+<input type="password" name="login[password]" class="input-text required-entry validate-password" id="pass" title="Пароль"/>
+</div>
+</li>
+</ul>
+<div id="window-overlay" class="window-overlay" style="display:none;"></div>
+<div id="remember-me-popup" class="remember-me-popup" style="display:none;">
+<div class="remember-me-popup-head">
+<h3>What's this?</h3>
+<a href="#" class="remember-me-popup-close" title="Закрыть">Закрыть</a>
+</div>
+<div class="remember-me-popup-body">
+<p>Checking &quot;Remember Me&quot; will let you access your shopping cart on this computer when you are logged out</p>
+<div class="remember-me-popup-close-button a-right">
+<a href="#" class="remember-me-popup-close button" title="Закрыть"><span>Закрыть</span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function toggleRememberMepopup(event){
+        if($('remember-me-popup')){
+            var viewportHeight = document.viewport.getHeight(),
+                docHeight      = $$('body')[0].getHeight(),
+                height         = docHeight > viewportHeight ? docHeight : viewportHeight;
+            $('remember-me-popup').toggle();
+            $('window-overlay').setStyle({ height: height + 'px' }).toggle();
+        }
+        Event.stop(event);
+    }
+
+    document.observe("dom:loaded", function() {
+        new Insertion.Bottom($$('body')[0], $('window-overlay'));
+        new Insertion.Bottom($$('body')[0], $('remember-me-popup'));
+
+        $$('.remember-me-popup-close').each(function(element){
+            Event.observe(element, 'click', toggleRememberMepopup);
+        })
+        $$('#remember-me-box a').each(function(element) {
+            Event.observe(element, 'click', toggleRememberMepopup);
+        });
+    });
+//]]>
+</script>
+<p class="required">* Обязательные поля</p>
+<div class="buttons-set">
+<a HREF="../forgotpassword/index.htm" class="f-left">Забыли пароль?</a>
+<button type="submit" class="button" title="Войти" name="send" id="send2"><span><span>Войти</span></span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="new-users-wrapper alpha grid_12">
+<div class="col-1 new-users">
+<div class="content">
+<h2>Новые клиенты</h2>
+<p>Создав учётную запись на нашем сайте, вы будете тратить меньше времени на оформление заказа, сможете хранить несколько адресов доставки, отслеживать состояние заказов, а также многое другое.</p>
+<div class="buttons-set">
+<button type="button" title="Создать учётную запись" class="button" onclick="window.location='../create/index.htm';"><span><span>Создать учётную запись</span></span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('login-form', true);
+    //]]>
+    </script>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="footer-container">
+<div class="container_24">
+<div class="wrapper">
+<div class="grid_24">
+<div class="footer">
+<div class="footer-cols-wrapper">
+<div class="footer-col">
+<h4>Информация</h4>
+<div class="footer-col-content">
+<ul>
+<li><a HREF="../../../about-magento-demo-store">О компании</a></li>
+<li><a HREF="../../../customer-service">Обслуживание клиентов</a></li>
+<li class="last privacy"><a HREF="../../../privacy-policy-cookie-restriction-mode">Политика конфиденциальности</a></li>
+</ul> <ul class="links">
+<li class="first"><a HREF="../../../catalog/seo_sitemap/category/index.htm" title="Карта сайта">Карта сайта</a></li>
+<li><a HREF="../../../catalogsearch/term/popular/index.htm" title="Поисковые запросы">Поисковые запросы</a></li>
+<li><a HREF="../../../catalogsearch/advanced/index.htm" title="Расширенный поиск">Расширенный поиск</a></li>
+<li><a HREF="../../../sales/guest/form/index.htm" title="Заказы и возвраты">Заказы и возвраты</a></li>
+<li class=" last"><a HREF="../../../contacts/index.htm" title="Обратная связь">Обратная связь</a></li>
+</ul>
+</div>
+</div>
+</div>
+<address>&copy; <script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script> Magento Онлайн Магазин. Все права защищены.</address>
+<div class="clear"></div>
+<ul class="social-buttons">
+<li class="item-1"><a href="#"></a></li>
+<li class="item-2"><a href="#"></a></li>
+<li class="item-3"><a href="#"></a></li>
+</ul> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

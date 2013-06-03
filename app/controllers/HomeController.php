@@ -15,9 +15,9 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function getIndex()
 	{
-		return View::make('hello');
+		return $this->rederView('home.index')->with('selected_main_menu_item','Glass Earrings');
 	}
 
 }

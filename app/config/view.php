@@ -27,5 +27,7 @@ return array(
 	*/
 
 	'pagination' => 'pagination::slider',
+    
+    'title' => 'Jewelery Store',
 
 );

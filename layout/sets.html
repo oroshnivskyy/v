@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sets</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="description" content="Default Description"/>
+    <meta name="keywords" content="Magento, Varien, E-commerce"/>
+    <meta name="robots" content="INDEX,FOLLOW"/>
+    <script type="text/javascript">
+        //<![CDATA[
+        window.__CF = window.__CF || {};
+        window.__CF.AJS = {"ga_key": {"ua": "UA-7078796-5", "ga_bs": "2"}};
+        //]]>
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+        try {
+            if (!window.CloudFlare) {
+                var CloudFlare = [
+                    {verbose: 0, p: 0, byc: 0, owlid: "cf", mirage: {responsive: 0, lazy: 0}, oracle: 0, paths: {cloudflare: "../cdn-cgi/nexp/abv=378448694/index.htm"}, atok: "edd23b83a894393d34de14a3bdc27bb8", zone: "template-help.com", rocket: "0", apps: {"ga_key": {"ua": "UA-7078796-5", "ga_bs": "2"}}}
+                ];
+                var a = document.createElement("script"), b = document.getElementsByTagName("script")[0];
+                a.async = !0;
+                a.src = "../ajax.cloudflare.com/cdn-cgi/nexp/abv=4035706501/cloudflare.min.js";
+                b.parentNode.insertBefore(a, b);
+            }
+        } catch (e) {
+        }
+        ;
+        //]]>
+    </script>
+    <link rel="icon" HREF="skin/frontend/default/theme423/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" HREF="skin/frontend/default/theme423/favicon.ico" type="image/x-icon"/>
+    <link href="../../fonts.googleapis.com/css@family=Playfair+Display" rel='stylesheet' type='text/css'>
+    <link href="../../fonts.googleapis.com/css@family=Open+Sans" rel='stylesheet' type='text/css'>
+    <link href="../../fonts.googleapis.com/css@family=Open+Sans+Condensed-3A300" rel='stylesheet' type='text/css'>
+    <link href="../../fonts.googleapis.com/css@family=Berkshire+Swash" rel='stylesheet' type='text/css'>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/superfish.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/scripts.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/easyTooltip.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/jquery.iosslider.min.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript">
+        //<![CDATA[
+    var BLANK_URL = 'http://livedemo00.template-help.com/magento_42124/js/blank.html';
+    var BLANK_IMG = 'http://livedemo00.template-help.com/magento_42124/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+    <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img
+                src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                height="42" width="820"
+                alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/></a>
+    </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <style>
+        body {
+            min-width: 960px !important;
+        }
+    </style>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="skin/frontend/default/theme423/css/styles.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="skin/frontend/default/theme423/css/responsive.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="skin/frontend/default/theme423/css/superfish.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="skin/frontend/default/theme423/css/camera.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="skin/frontend/base/default/css/widgets.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="skin/frontend/default/theme423/css/ecommerceteam/cloud-zoom.css"
+          media="all"/>
+    <link rel="stylesheet" type="text/css" href="skin/frontend/default/theme423/css/print.css" media="print"/>
+    <script type="text/javascript" SRC="js/prototype/prototype.js"></script>
+    <script type="text/javascript" SRC="js/lib/ccard.js"></script>
+    <script type="text/javascript" SRC="js/prototype/validation.js"></script>
+    <script type="text/javascript" SRC="js/scriptaculous/builder.js"></script>
+    <script type="text/javascript" SRC="js/scriptaculous/effects.js"></script>
+    <script type="text/javascript" SRC="js/scriptaculous/dragdrop.js"></script>
+    <script type="text/javascript" SRC="js/scriptaculous/controls.js"></script>
+    <script type="text/javascript" SRC="js/scriptaculous/slider.js"></script>
+    <script type="text/javascript" SRC="js/varien/js.js"></script>
+    <script type="text/javascript" SRC="js/varien/form.js"></script>
+    <script type="text/javascript" SRC="js/mage/translate.js"></script>
+    <script type="text/javascript" SRC="js/mage/cookies.js"></script>
+    <script type="text/javascript" SRC="js/ecommerceteam/cloud-zoom.1.0.2.min.js"></script>
+    <script type="text/javascript" SRC="skin/frontend/default/theme423/js/msrp.js"></script>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css"
+          href="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/css/styles-ie.css"
+          media="all"/>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script type="text/javascript"
+            src="http://livedemo00.template-help.com/magento_42124/js/lib/ds-sleight.js"></script>
+    <script type="text/javascript"
+            src="http://livedemo00.template-help.com/magento_42124/skin/frontend/base/default/js/ie6.js"></script>
+    <![endif]-->
+</head>
+<body class=" catalog-category-view categorypath-sets-html category-sets">
+<div class="wrapper">
+<noscript>
+    <div class="global-site-notice noscript">
+        <div class="notice-inner">
+            <p>
+                <strong>JavaScript seems to be disabled in your browser.</strong><br/>
+                You must have JavaScript enabled in your browser to utilize the functionality of this website. </p>
+        </div>
+    </div>
+</noscript>
+<div class="page">
+<div class="header-container">
+    <div class="container_24">
+        <div class="grid_24">
+            <div class="header">
+                <div class="header-buttons">
+                    <div class="row-1">
+                        <div class="header-button top-login">
+                            <ul class="links">
+                                <li class="first last"><a HREF="customer/account/login/index.htm" title="Log In"
+                                                          class="Login_link">Log In</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-button menu-list">
+                            <a href="#"></a>
+                            <ul class="links">
+                                <li class="first"><a HREF="customer/account/index.htm" title="My Account">My Account</a>
+                                </li>
+                                <li><a HREF="checkout/cart/index.htm" title="My Cart" class="top-link-cart">My Cart</a>
+                                </li>
+                                <li><a HREF="checkout/index.htm" title="Checkout" class="top-link-checkout">Checkout</a>
+                                </li>
+                                <li class=" last"><a HREF="wishlist/index.htm" title="My Wishlist">My Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-button currency-list">
+                            <a href="#">$</a>
+                            <ul>
+                                <li>
+                                    <a HREF="directory/currency/switch/currency/GBP/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVsc9A213734"
+                                       title="GBP">British Pound Sterling - GBP</a>
+                                </li>
+                                <li>
+                                    <a HREF="directory/currency/switch/currency/EUR/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVsc9534DE02"
+                                       title="EUR">Euro - EUR</a>
+                                </li>
+                                <li>
+                                    <a HREF="directory/currency/switch/currency/USD/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscB6231FEB"
+                                       title="USD">US Dollar - USD</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-button lang-list">
+                            <a href="#"></a>
+                            <ul>
+                                <li>
+                                    <a HREF="sets.html@___store=english&___from_store=english" title="en_US">English</a>
+<span>
+en </span>
+                                </li>
+                                <li>
+                                    <a HREF="sets.html@___store=german&___from_store=english" title="de_DE">German</a>
+<span>
+</span>
+                                </li>
+                                <li>
+                                    <a HREF="sets.html@___store=spanish&___from_store=english" title="es_ES">Spanish</a>
+<span>
+</span>
+                                </li>
+                                <li>
+                                    <a HREF="sets.html@___store=russian&___from_store=english" title="ru_RU">Russian</a>
+<span>
+</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quick-access">
+                        <div class="header-links">
+                            <ul class="links">
+                                <li class="first last"><a HREF="customer/account/login/index.htm" title="Log In"
+                                                          class="Login_link">Log In</a></li>
+                            </ul>
+                            <ul class="links">
+                                <li class="first"><a HREF="customer/account/index.htm" title="My Account">My Account</a>
+                                </li>
+                                <li><a HREF="checkout/cart/index.htm" title="My Cart" class="top-link-cart">My Cart</a>
+                                </li>
+                                <li><a HREF="checkout/index.htm" title="Checkout" class="top-link-checkout">Checkout</a>
+                                </li>
+                                <li class=" last"><a HREF="wishlist/index.htm" title="My Wishlist">My Wishlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <a HREF="index.htm" title="Magento Commerce" class="logo"><strong>Magento Commerce</strong><img
+                        SRC="skin/frontend/default/theme423/images/logo.png" alt="Magento Commerce"/></a>
+
+                <div class="clear"></div>
+                <div class="row-2">
+                    <div class="block-cart-header">
+                        <div class="block-content">
+                            <p class="empty"><span class="cart-title">My Cart:</span>0 item(s)</p>
+                        </div>
+                    </div>
+                    <script>
+                        jQuery('.block-cart-header .cart-content').hide();
+                        if (jQuery('.container_24').width() < 800) {
+                            jQuery('.block-cart-header .summary, .block-cart-header .cart-content').click(function () {
+                                        jQuery('.block-cart-header .cart-content').stop(true, true).slideToggle(300);
+                                    }
+                            )
+                        }
+                        else {
+                            jQuery('.block-cart-header .summary, .block-cart-header .cart-content').hover(
+                                    function () {
+                                        jQuery('.block-cart-header .cart-content').stop(true, true).slideDown(400);
+                                    },
+                                    function () {
+                                        jQuery('.block-cart-header .cart-content').stop(true, true).delay(400).slideUp(300);
+                                    }
+                            );
+                        }
+                    </script>
+                    <p class="welcome-msg">Welcome to our online store! </p>
+
+                    <div class="clear"></div>
+                    <form id="search_mini_form"
+                          action="http://livedemo00.template-help.com/magento_42124/catalogsearch/result/" method="get">
+                        <div class="form-search">
+                            <label for="search">Search:</label>
+                            <input id="search" type="text" name="q" value="" class="input-text" maxlength="128"/>
+                            <button type="submit" title="Search" class="button"><span><span>Search</span></span>
+                            </button>
+                            <div id="search_autocomplete" class="search-autocomplete"></div>
+                            <script type="text/javascript">
+                                //<![CDATA[
+                                var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+                                searchForm.initAutocomplete('catalogsearch/ajax/suggest/index.htm', 'search_autocomplete');
+                                //]]>
+                            </script>
+                        </div>
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="nav-container">
+    <div class="container_24">
+        <div class="grid_24">
+            <div id="menu-icon">Categories</div>
+            <ul id="nav" class="sf-menu">
+                <li class="level0 nav-1 first level-top"><a HREF="bracelets.html"
+                                                            class="level-top"><span>Bracelets</span></a></li>
+                <li class="level0 nav-2 level-top parent"><a HREF="earrings.html"
+                                                             class="level-top"><span>Earrings</span></a>
+                    <ul class="level0">
+                        <li class="level1 nav-2-1 first"><a
+                                HREF="earrings/glass-earrings.html"><span>Glass Earrings</span></a></li>
+                        <li class="level1 nav-2-2"><a
+                                HREF="earrings/metal-earrings.html"><span>Metal Earrings</span></a></li>
+                        <li class="level1 nav-2-3 last"><a
+                                HREF="earrings/plastic-earrings.html"><span>Plastic Earrings</span></a></li>
+                    </ul>
+                </li>
+                <li class="level0 nav-3 level-top"><a HREF="neclaces.html" class="level-top"><span>Necklaces</span></a>
+                </li>
+                <li class="level0 nav-4 level-top"><a HREF="rings.html" class="level-top"><span>Rings</span></a></li>
+                <li class="level0 nav-5 active last level-top"><a HREF="sets.html"
+                                                                  class="level-top"><span>Sets</span></a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="main-container col2-right-layout">
+<div class="container_24">
+<div class="wrapper">
+<div class="grid_24">
+<div class="main">
+<div class="breadcrumbs">
+    <ul>
+        <li class="home">
+            <a HREF="index.htm" title="Go to Home Page">Home</a>
+            <span>></span>
+        </li>
+        <li class="category10">
+            <strong>Sets</strong>
+        </li>
+    </ul>
+</div>
+<div class="wrapper">
+<div class="col-main alpha grid_18">
+<div class="padding-r">
+<div class="page-title category-title">
+    <h1>Sets</h1>
+</div>
+
+<div class="category-products">
+<div class="toolbar">
+    <div class="pager">
+        <p class="amount">
+            <strong>6 Item(s)</strong>
+        </p>
+
+        <div class="limiter">
+            <label>Show</label>
+            <select onchange="setLocation(this.value)">
+                <option value="http://livedemo00.template-help.com/magento_42124/sets.html?limit=9"
+                        selected="selected">
+                    9
+                </option>
+                <option value="http://livedemo00.template-help.com/magento_42124/sets.html?limit=15">
+                    15
+                </option>
+                <option value="http://livedemo00.template-help.com/magento_42124/sets.html?limit=30">
+                    30
+                </option>
+            </select></div>
+    </div>
+    <div class="sorter">
+        <p class="view-mode">
+            <label>View as:</label>
+            <strong title="Grid" class="grid">Grid</strong>&nbsp;
+            <a HREF="sets.html@mode=list" title="List" class="list">List</a>&nbsp;
+        </p>
+
+        <div class="sort-by">
+            <div class="right">
+                <a HREF="sets.html@dir=desc&order=position" title="Set Descending Direction"><img
+                        SRC="skin/frontend/default/theme423/images/i_asc_arrow.gif"
+                        alt="Set Descending Direction" class="v-middle"/></a>
+            </div>
+            <label>Sort By</label>
+            <select onchange="setLocation(this.value)">
+                <option value="http://livedemo00.template-help.com/magento_42124/sets.html?dir=asc&amp;order=position"
+                        selected="selected">
+                    Position
+                </option>
+                <option value="http://livedemo00.template-help.com/magento_42124/sets.html?dir=asc&amp;order=name">
+                    Name
+                </option>
+                <option value="http://livedemo00.template-help.com/magento_42124/sets.html?dir=asc&amp;order=price">
+                    Price
+                </option>
+            </select>
+        </div>
+    </div>
+</div>
+<ul class="products-grid">
+    <li class="item first">
+        <a HREF="sets/friendship-pendants-pink-butterfly-two-pendant.html"
+           title="Friendship Pendants, Pink Butterfly, Two Pendant" class="product-image"><img
+                SRC="media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/f/r/fE60D2BA9"
+                width="210" height="210" alt="Friendship Pendants, Pink Butterfly, Two Pendant"/></a>
+
+        <div class="product-shop">
+            <h2 class="product-name"><a HREF="sets/friendship-pendants-pink-butterfly-two-pendant.html"
+                                        title="Friendship Pendants, Pink Butterfly, Two Pendant">Friendship
+                Pendants, Pink Butterfly, Two Pendant</a></h2>
+
+            <div class="price-box">
+<span class="regular-price" id="product-price-37">
+<span class="price">$45.30</span> </span>
+            </div>
+            <div class="actions">
+                <button type="button" title="Add to Cart" class="button btn-cart"
+                        onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscC5jb20vbWFnZW50b180MjE85819CE')">
+                    <span><span>Add to Cart</span></span></button>
+                <ul class="add-to-links">
+                    <li><a title="Add to Wishlist" HREF="wishlist/index/add/product/37/index.htm"
+                           class="link-wishlist tooltips">Add to Wishlist</a></li>
+                    <li><span class="separator">|</span> <a title="Add to Compare"
+                                                            HREF="catalog/product_compare/add/product/37/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVsc7EBBDAF2"
+                                                            class="link-compare tooltips">Add to Compare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="item">
+        <a HREF="sets/girls-set-of-necklace-bracelet.html" title="Girls Set of Necklace &amp; Bracelet "
+           class="product-image"><img
+                SRC="media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/g/i/gD8655A61"
+                width="210" height="210" alt="Girls Set of Necklace &amp; Bracelet "/></a>
+
+        <div class="product-shop">
+            <h2 class="product-name"><a HREF="sets/girls-set-of-necklace-bracelet.html"
+                                        title="Girls Set of Necklace &amp; Bracelet ">Girls Set of Necklace
+                &amp; Bracelet </a></h2>
+
+            <div class="price-box">
+<span class="regular-price" id="product-price-38">
+<span class="price">$18.33</span> </span>
+            </div>
+            <div class="actions">
+                <button type="button" title="Add to Cart" class="button btn-cart"
+                        onclick="setLocation('sets/girls-set-of-necklace-bracelet.html@options=cart')">
+                    <span><span>Add to Cart</span></span></button>
+                <ul class="add-to-links">
+                    <li><a title="Add to Wishlist" HREF="wishlist/index/add/product/38/index.htm"
+                           class="link-wishlist tooltips">Add to Wishlist</a></li>
+                    <li><span class="separator">|</span> <a title="Add to Compare"
+                                                            HREF="catalog/product_compare/add/product/38/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscF68D83CE"
+                                                            class="link-compare tooltips">Add to Compare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="item last">
+        <a HREF="sets/girls-set-of-necklace-bracelet-earrings-bright-colorful-butterflies.html"
+           title="Girls Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Butterflies"
+           class="product-image"><img
+                SRC="media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/g/i/g1D0585A6"
+                width="210" height="210"
+                alt="Girls Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Butterflies"/></a>
+
+        <div class="product-shop">
+            <h2 class="product-name"><a
+                    HREF="sets/girls-set-of-necklace-bracelet-earrings-bright-colorful-butterflies.html"
+                    title="Girls Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Butterflies">Girls
+                Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Butterflies</a></h2>
+
+            <div class="price-box">
+<span class="regular-price" id="product-price-39">
+<span class="price">$22.36</span> </span>
+            </div>
+            <div class="actions">
+                <button type="button" title="Add to Cart" class="button btn-cart"
+                        onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscC5jb20vbWFnZW50b180MjBA2E32C8')">
+                    <span><span>Add to Cart</span></span></button>
+                <ul class="add-to-links">
+                    <li><a title="Add to Wishlist" HREF="wishlist/index/add/product/39/index.htm"
+                           class="link-wishlist tooltips">Add to Wishlist</a></li>
+                    <li><span class="separator">|</span> <a title="Add to Compare"
+                                                            HREF="catalog/product_compare/add/product/39/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVsc833826DF"
+                                                            class="link-compare tooltips">Add to Compare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+<ul class="products-grid">
+    <li class="item first">
+        <a HREF="sets/girls-set-of-necklace-bracelet-earrings-bright-colorful-hearts.html"
+           title="Girls Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Hearts "
+           class="product-image"><img
+                SRC="media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/g/i/gE19AE7EC"
+                width="210" height="210"
+                alt="Girls Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Hearts "/></a>
+
+        <div class="product-shop">
+            <h2 class="product-name"><a
+                    HREF="sets/girls-set-of-necklace-bracelet-earrings-bright-colorful-hearts.html"
+                    title="Girls Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Hearts ">Girls
+                Set of Necklace, Bracelet &amp; Earrings, Bright Colorful Hearts </a></h2>
+
+            <div class="price-box">
+<span class="regular-price" id="product-price-40">
+<span class="price">$18.33</span> </span>
+            </div>
+            <div class="actions">
+                <button type="button" title="Add to Cart" class="button btn-cart"
+                        onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscC5jb20vbWFnZW50b180MjB5FBE5C2')">
+                    <span><span>Add to Cart</span></span></button>
+                <ul class="add-to-links">
+                    <li><a title="Add to Wishlist" HREF="wishlist/index/add/product/40/index.htm"
+                           class="link-wishlist tooltips">Add to Wishlist</a></li>
+                    <li><span class="separator">|</span> <a title="Add to Compare"
+                                                            HREF="catalog/product_compare/add/product/40/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVsc22EB4B20"
+                                                            class="link-compare tooltips">Add to Compare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="item">
+        <a HREF="sets/jewelry-set-bronze-wood-and-peach-stone-necklace-bracelet-and-earring.html"
+           title="Jewelry Set - Bronze, Wood and Peach Stone Necklace, Bracelet and Earring"
+           class="product-image"><img
+                SRC="media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/j/e/j7C9F3966"
+                width="210" height="210"
+                alt="Jewelry Set - Bronze, Wood and Peach Stone Necklace, Bracelet and Earring"/></a>
+
+        <div class="product-shop">
+            <h2 class="product-name"><a
+                    HREF="sets/jewelry-set-bronze-wood-and-peach-stone-necklace-bracelet-and-earring.html"
+                    title="Jewelry Set - Bronze, Wood and Peach Stone Necklace, Bracelet and Earring">Jewelry
+                Set - Bronze, Wood and Peach Stone Necklace, Bracelet and Earring</a></h2>
+
+            <div class="price-box">
+<span class="regular-price" id="product-price-41">
+<span class="price">$21.21</span> </span>
+            </div>
+            <div class="actions">
+                <button type="button" title="Add to Cart" class="button btn-cart"
+                        onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscC5jb20vbWFnZW50b180Mj74753A02')">
+                    <span><span>Add to Cart</span></span></button>
+                <ul class="add-to-links">
+                    <li><a title="Add to Wishlist" HREF="wishlist/index/add/product/41/index.htm"
+                           class="link-wishlist tooltips">Add to Wishlist</a></li>
+                    <li><span class="separator">|</span> <a title="Add to Compare"
+                                                            HREF="catalog/product_compare/add/product/41/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVsc575EEE31"
+                                                            class="link-compare tooltips">Add to Compare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="item last">
+        <a HREF="sets/red-jasper-and-swarovski-crystal-necklace-bracelet-and-earrings-jewelry.html"
+           title="Red Jasper and Swarovski Crystal Necklace, Bracelet and Earrings Jewelry"
+           class="product-image"><img
+                SRC="media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/r/e/rD196EEF8"
+                width="210" height="210"
+                alt="Red Jasper and Swarovski Crystal Necklace, Bracelet and Earrings Jewelry"/></a>
+
+        <div class="product-shop">
+            <h2 class="product-name"><a
+                    HREF="sets/red-jasper-and-swarovski-crystal-necklace-bracelet-and-earrings-jewelry.html"
+                    title="Red Jasper and Swarovski Crystal Necklace, Bracelet and Earrings Jewelry">Red
+                Jasper and Swarovski Crystal Necklace, Bracelet and Earrings Jewelry</a></h2>
+
+            <div class="price-box">
+<span class="regular-price" id="product-price-42">
+<span class="price">$26.26</span> </span>
+            </div>
+            <div class="actions">
+                <button type="button" title="Add to Cart" class="button btn-cart"
+                        onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscC5jb20vbWFnZW50b180MjED975C03')">
+                    <span><span>Add to Cart</span></span></button>
+                <ul class="add-to-links">
+                    <li><a title="Add to Wishlist" HREF="wishlist/index/add/product/42/index.htm"
+                           class="link-wishlist tooltips">Add to Wishlist</a></li>
+                    <li><span class="separator">|</span> <a title="Add to Compare"
+                                                            HREF="catalog/product_compare/add/product/42/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscC9800102"
+                                                            class="link-compare tooltips">Add to Compare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+<script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd', 'even', 'first', 'last'])</script>
+
+</div>
+<script>
+    jQuery(document).ready(function () {
+        if (jQuery('.container_24').width() > 800) {
+            jQuery(".products-grid .add-to-links .link-wishlist").easyTooltip();
+            jQuery(".products-grid .add-to-links .link-compare ").easyTooltip();
+            jQuery(".products-list .add-to-links .link-wishlist").easyTooltip();
+            jQuery(".products-list .add-to-links .link-compare ").easyTooltip();
+        }
+    });
+</script>
+<div id="map-popup" class="map-popup" style="display:none;">
+    <a href="#" class="map-popup-close" id="map-popup-close">x</a>
+
+    <div class="map-popup-arrow"></div>
+    <div class="map-popup-heading"><h2 id="map-popup-heading"></h2></div>
+    <div class="map-popup-content" id="map-popup-content">
+        <div class="map-popup-msrp" id="map-popup-msrp-box"><strong>Price:</strong> <span
+                style="text-decoration:line-through;" id="map-popup-msrp"></span></div>
+        <div class="map-popup-price" id="map-popup-price-box"><strong>Actual Price:</strong> <span
+                id="map-popup-price"></span></div>
+        <div class="map-popup-checkout">
+            <form action="" method="POST" id="product_addtocart_form_from_popup">
+                <input type="hidden" name="product" class="product_id" value="" id="map-popup-product-id"/>
+
+                <div class="additional-addtocart-box">
+                </div>
+                <button type="button" title="Add to Cart" class="button btn-cart" id="map-popup-button">
+                    <span><span>Add to Cart</span></span></button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            document.observe("dom:loaded", Catalog.Map.bindProductForm);
+            //]]>
+        </script>
+    </div>
+    <div class="map-popup-text" id="map-popup-text">Our price is lower than the manufacturer's &quot;minimum
+        advertised price.&quot; As a result, we cannot show you the price in catalog or the product page.
+        <br/><br/> You have no obligation to purchase the product once you know the price. You can simply remove
+        the item from your cart.
+    </div>
+    <div class="map-popup-text" id="map-popup-text-what-this">Our price is lower than the manufacturer's &quot;minimum
+        advertised price.&quot; As a result, we cannot show you the price in catalog or the product page.
+        <br/><br/> You have no obligation to purchase the product once you know the price. You can simply remove
+        the item from your cart.
+    </div>
+</div>
+</div>
+</div>
+<div class="col-right sidebar grid_6 omega">
+    <div class="block block-layered-nav">
+        <div class="block-title">
+            <strong><span>Shop By</span></strong>
+        </div>
+        <div class="block-content">
+            <p class="block-subtitle">Shopping Options</p>
+            <dl id="narrow-by-list">
+                <dt>Price</dt>
+                <dd>
+                    <ol>
+                        <li>
+                            <a HREF="sets.html@price=10-20"><span class="price">$10.00</span> - <span class="price">$19.99</span></a>
+                            (2)
+                        </li>
+                        <li>
+                            <a HREF="sets.html@price=20-30"><span class="price">$20.00</span> - <span class="price">$29.99</span></a>
+                            (3)
+                        </li>
+                        <li>
+                            <a HREF="sets.html@price=40-"><span class="price">$40.00</span> and above</a>
+                            (1)
+                        </li>
+                    </ol>
+                </dd>
+                <dt>Manufacturer</dt>
+                <dd>
+                    <ol>
+                        <li>
+                            <a HREF="sets.html@manufacturer=5">DaVonna</a>
+                            (2)
+                        </li>
+                        <li>
+                            <a HREF="sets.html@manufacturer=4">Molly and Emma</a>
+                            (3)
+                        </li>
+                        <li>
+                            <a HREF="sets.html@manufacturer=6">Sterling Essentials </a>
+                            (1)
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+            <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        </div>
+    </div>
+    <div class="block block-cart">
+        <div class="block-title">
+            <strong><span>My Cart</span></strong>
+        </div>
+        <div class="block-content">
+            <p class="empty">You have no items in your shopping cart.</p>
+        </div>
+    </div>
+    <div class="block block-list block-compare">
+        <div class="block-title">
+            <strong><span>Compare Products </span></strong>
+        </div>
+        <div class="block-content">
+            <p class="empty">You have no items to compare.</p>
+        </div>
+    </div>
+    <div class="block block-tags">
+        <div class="block-title">
+            <strong><span>Popular Tags</span></strong>
+        </div>
+        <div class="block-content">
+            <ul class="tags-list">
+                <li><a HREF="tag/product/list/tagId/9/index.htm" style="font-size:145%;">accessories</a></li>
+                <li><a HREF="tag/product/list/tagId/11/index.htm" style="font-size:75%;">babies</a></li>
+                <li><a HREF="tag/product/list/tagId/7/index.htm" style="font-size:145%;">beautiful</a></li>
+                <li><a HREF="tag/product/list/tagId/3/index.htm" style="font-size:75%;">character</a></li>
+                <li><a HREF="tag/product/list/tagId/1/index.htm" style="font-size:145%;">children</a></li>
+                <li><a HREF="tag/product/list/tagId/8/index.htm" style="font-size:110%;">collections</a></li>
+                <li><a HREF="tag/product/list/tagId/4/index.htm" style="font-size:110%;">happiness</a></li>
+                <li><a HREF="tag/product/list/tagId/10/index.htm" style="font-size:145%;">premium</a></li>
+                <li><a HREF="tag/product/list/tagId/5/index.htm" style="font-size:75%;">smiles</a></li>
+                <li><a HREF="tag/product/list/tagId/6/index.htm" style="font-size:110%;">unselfishly</a></li>
+                <li><a HREF="tag/product/list/tagId/2/index.htm" style="font-size:75%;">wealth</a></li>
+            </ul>
+            <div class="actions">
+                <a HREF="tag/list/index.htm">View All Tags</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+        function validatePollAnswerIsSelected() {
+            var options = $$('input.poll_vote');
+            for (i in options) {
+                if (options[i].checked == true) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        //]]>
+    </script>
+    <div class="block block-poll">
+        <div class="block-title">
+            <strong><span>Community Poll</span></strong>
+        </div>
+        <form id="pollForm" action="http://livedemo00.template-help.com/magento_42124/poll/vote/add/poll_id/1/"
+              method="post" onsubmit="return validatePollAnswerIsSelected();">
+            <div class="block-content">
+                <p class="block-subtitle">What is the main reason for you to purchase products online?</p>
+                <ul id="poll-answers">
+                    <li>
+                        <input type="radio" name="vote" class="radio poll_vote" id="vote_1" value="1"/>
+                        <span class="label"><label for="vote_1">More convenient shipping and delivery</label></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" class="radio poll_vote" id="vote_2" value="2"/>
+                        <span class="label"><label for="vote_2">Lower price</label></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" class="radio poll_vote" id="vote_3" value="3"/>
+                        <span class="label"><label for="vote_3">Bigger choice</label></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" class="radio poll_vote" id="vote_4" value="4"/>
+                        <span class="label"><label for="vote_4">Centralized product search procedure (without having to
+                            leave your home)</label></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" class="radio poll_vote" id="vote_5" value="5"/>
+                        <span class="label"><label for="vote_5">Payments security</label></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" class="radio poll_vote" id="vote_6" value="6"/>
+                        <span class="label"><label for="vote_6">30-day Money Back Guarantee</label></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="vote" class="radio poll_vote" id="vote_7" value="7"/>
+                        <span class="label"><label for="vote_7">Other.</label></span>
+                    </li>
+                </ul>
+                <script type="text/javascript">decorateList('poll-answers');</script>
+                <div class="actions">
+                    <button type="submit" title="Vote" class="button"><span><span>Vote</span></span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="block block-subscribe">
+        <form action="http://livedemo00.template-help.com/magento_42124/newsletter/subscriber/new/" method="post"
+              id="newsletter-validate-detail">
+            <div class="block-title"><strong><span>Newsletter</span></strong></div>
+            <div class="block-content">
+                <div class="input-box">
+                    <input type="email" name="email" id="newsletter" title="Newsletter"
+                           class="input-text required-entry validate-email"/>
+                </div>
+                <div class="actions">
+                    <button type="submit" title="Subscribe" class="button"><span><span>Subscribe</span></span></button>
+                </div>
+            </div>
+        </form>
+        <script type="text/javascript">
+            //<![CDATA[
+            var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+            //]]>
+        </script>
+    </div>
+    <div class="paypal-logo">
+        <a href="#" title="Additional Options"
+           onclick="javascript:window.open('../../https@www.paypal.com/us/cgi-bin/webscr@cmd=xpt-2FMarketing-2Fpopup-2FOLCWhatIsPayPal-outside','paypal','width=600,height=350,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes'); return false;"><img
+                SRC="../../https@www.paypalobjects.com/en_US/i/bnr/bnr_nowAccepting_150x60.gif" alt="Additional Options"
+                title="Additional Options"/></a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-container">
+    <div class="container_24">
+        <div class="wrapper">
+            <div class="grid_24">
+                <div class="footer">
+                    <div class="footer-cols-wrapper">
+                        <div class="footer-col">
+                            <h4>Information</h4>
+
+                            <div class="footer-col-content">
+                                <ul>
+                                    <li><a HREF="about-magento-demo-store">About Us</a></li>
+                                    <li><a HREF="customer-service">Customer Service</a></li>
+                                    <li class="last privacy"><a HREF="privacy-policy-cookie-restriction-mode">Privacy
+                                        Policy</a></li>
+                                </ul>
+                                <ul class="links">
+                                    <li class="first"><a HREF="catalog/seo_sitemap/category/index.htm" title="Site Map">Site
+                                        Map</a></li>
+                                    <li><a HREF="catalogsearch/term/popular/index.htm" title="Search Terms">Search
+                                        Terms</a></li>
+                                    <li><a HREF="catalogsearch/advanced/index.htm" title="Advanced Search">Advanced
+                                        Search</a></li>
+                                    <li><a HREF="sales/guest/form/index.htm" title="Orders and Returns">Orders and
+                                        Returns</a></li>
+                                    <li class=" last"><a HREF="contacts/index.htm" title="Contact Us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <address>&copy;
+                        <script type="text/javascript">var mdate = new Date();
+                        document.write(mdate.getFullYear());</script>
+                        Magento Demo Store. All Rights Reserved.
+                    </address>
+                    <div class="clear"></div>
+                    <ul class="social-buttons">
+                        <li class="item-1"><a href="#"></a></li>
+                        <li class="item-2"><a href="#"></a></li>
+                        <li class="item-3"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
