@@ -16,10 +16,12 @@ class CreateProductGroupTable extends Migration
         Schema::create(
             'product_group',
             function (Blueprint $table) {
-                $table->increments('id');
+                $table->string('id');
                 $table->string('name');
-                $table->integer('parent_group')->unsigned()->index();
-                $table->timestamps();
+                $table->string('image')->nullable();
+                $table->string('parent_id')->nullable()->index();
+                $table->boolean('is_enabled');
+                $table->primary('id');
             }
         );
     }

@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
         Eloquent::unguard();
 
 //        $this->call('ProductTableSeeder');
+        $this->call('ProductGroupTableSeeder');
     }
 
 }
@@ -21,6 +22,6 @@ class ProductTableSeeder extends Seeder
 {
     public function run()
     {
-        DB::table('product')->delete();
+        Product::truncate();
     }
 }

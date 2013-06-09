@@ -9,7 +9,7 @@
 <div class="std">
     <div class="clear"></div>
 </div>
-<script src="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/js/camera.js"></script>
+<script src="/js/lib/camera.js"></script>
 <script>
     jQuery(function () {
         jQuery('#camera_wrap').camera({
@@ -31,15 +31,15 @@
     <div class="fluid_container">
         <div class="camera_wrap camera_orange_skin" id="camera_wrap">
             <div data-link="http://livedemo00.template-help.com/magento_42124/bracelets.html/"
-                 data-src="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/images/camera/slides/slide1.jpg"></div>
+                 data-src="/img/uploaded/slides/slide1.jpg"></div>
             <div data-link="http://livedemo00.template-help.com/magento_42124/earrings.html/"
-                 data-src="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/images/camera/slides/slide2.jpg"></div>
+                 data-src="/img/uploaded/slides/slide2.jpg"></div>
             <div data-link="http://livedemo00.template-help.com/magento_42124/neclaces.html/"
-                 data-src="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/images/camera/slides/slide3.jpg"></div>
+                 data-src="/img/uploaded/slides/slide3.jpg"></div>
             <div data-link="http://livedemo00.template-help.com/magento_42124/rings.html/"
-                 data-src="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/images/camera/slides/slide4.jpg"></div>
+                 data-src="/img/uploaded/slides/slide4.jpg"></div>
             <div data-link="http://livedemo00.template-help.com/magento_42124/sets.html/"
-                 data-src="http://livedemo00.template-help.com/magento_42124/skin/frontend/default/theme423/images/camera/slides/slide5.jpg"></div>
+                 data-src="/img/uploaded/slides/slide5.jpg"></div>
         </div>
     </div>
 </div>
@@ -48,7 +48,7 @@
     <li class="item first">
         <a href="http://livedemo00.template-help.com/magento_42124/robin-fabric-button-earrings.html"
            title="Robin fabric button earrings" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_robin-fabric-button-earrings.jpg"
+                src="/img/uploaded/products/original_robin-fabric-button-earrings.jpg"
                 width="300" height="300" alt="Robin fabric button earrings"/></a>
 
         <div class="product-box-info">
@@ -68,7 +68,7 @@
     <li class="item">
         <a href="http://livedemo00.template-help.com/magento_42124/pancy-blossom-bracelet.html"
            title="Pancy blossom bracelet" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_pancy-blossom-bracelet.jpg"
+                src="/img/uploaded/products/original_pancy-blossom-bracelet.jpg"
                 width="300" height="300" alt="Pancy blossom bracelet"/></a>
 
         <div class="product-box-info">
@@ -88,7 +88,7 @@
     <li class="item last">
         <a href="http://livedemo00.template-help.com/magento_42124/original-bird-red.html"
            title="Original bird red" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_dscf1074.jpg"
+                src="/img/uploaded/products/original_dscf1074.jpg"
                 width="300" height="300" alt="Original bird red"/></a>
 
         <div class="product-box-info">
@@ -110,7 +110,7 @@
     <li class="item first">
         <a href="http://livedemo00.template-help.com/magento_42124/pearl-pendants-adult-and-child-on-dish.html"
            title="Pearl pendants adult and child on dish" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_pearl_pendants_adult_and_child_on_dish.jpg"
+                src="/img/uploaded/products/original_pearl_pendants_adult_and_child_on_dish.jpg"
                 width="300" height="300" alt="Pearl pendants adult and child on dish"/></a>
 
         <div class="product-box-info">
@@ -131,7 +131,7 @@
     <li class="item">
         <a href="http://livedemo00.template-help.com/magento_42124/square.html" title="SQUARE"
            class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_occ11-005-n_square.jpg"
+                src="/img/uploaded/products/original_occ11-005-n_square.jpg"
                 width="300" height="300" alt="SQUARE"/></a>
 
         <div class="product-box-info">
@@ -151,7 +151,7 @@
     <li class="item last">
         <a href="http://livedemo00.template-help.com/magento_42124/original-neclaces.html"
            title="Original Neclaces" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_img_7529.jpg"
+                src="/img/uploaded/products/original_img_7529.jpg"
                 width="300" height="300" alt="Original Neclaces"/></a>
 
         <div class="product-box-info">
@@ -173,7 +173,7 @@
     <li class="item first">
         <a href="http://livedemo00.template-help.com/magento_42124/original-bird.html"
            title="Original bird" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_b_bird_t3.jpg"
+                src="/img/uploaded/products/original_b_bird_t3.jpg"
                 width="300" height="300" alt="Original bird"/></a>
 
         <div class="product-box-info">
@@ -193,7 +193,7 @@
     <li class="item">
         <a href="http://livedemo00.template-help.com/magento_42124/pearl-cudblaz.html"
            title="Pearl cudblaz" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_xms11-116-b.jpg"
+                src="/img/uploaded/products/original_xms11-116-b.jpg"
                 width="300" height="300" alt="Pearl cudblaz"/></a>
 
         <div class="product-box-info">
@@ -213,7 +213,7 @@
     <li class="item last">
         <a href="http://livedemo00.template-help.com/magento_42124/personalised-star-charm-bracelet.html"
            title="Personalised Star Charm Bracelet" class="product-image"><img
-                src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/o/r/original_nohs_120719_lisaangel_personalisedstarcharmbracelet-0253.jpg"
+                src="/img/uploaded/products/original_nohs_120719_lisaangel_personalisedstarcharmbracelet-0253.jpg"
                 width="300" height="300" alt="Personalised Star Charm Bracelet"/></a>
 
         <div class="product-box-info">

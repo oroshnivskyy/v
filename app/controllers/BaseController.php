@@ -24,28 +24,24 @@ class BaseController extends Controller
      * @return \Illuminate\View\View
      * @static
      */
-    protected function rederView($view, $data = array(), $mergeData = array())
+    protected function renderView($view, $data = array(), $mergeData = array())
     {
         View::composer(
             'composers.main_menu',
             function ($view) {
+                $activeGroups  = Cache::rememberForever('active_groups',function(){
+                        return ProductGroup::getActive()->get()->toArray();
+                    });
                 $view->with(
                     'main_menu_items',
-                    array(
-                        'Bracelets' => array('link' => 'bracelets'),
-                        'Earrings' => array(
-                            'link' => 'earrings',
-                            'items' => array(
-                                'Glass Earrings' => array('link' => 'glass-earrings'),
-                                'Metal Earrings' => array('link' => 'metal-earrings'),
-                                'Plastic Earrings' => array('link' => 'plastic-earrings')
-                            )
-                        ),
-                        'Necklaces' => array('link'=>'necklaces'),
-                        'Rings' => array('link'=>'rings'),
-                        'Sets' => array('link'=>'sets'),
-                    )
+                    $activeGroups
                 );
+            }
+        );
+        View::composer(
+            'composers.cart',
+            function ($view){
+                $view->with('cart_items', []);
             }
         );
         return View::make($view, $data, $mergeData)->with('title', Config::get('view')['title']);

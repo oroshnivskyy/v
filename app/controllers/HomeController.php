@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function getIndex()
 	{
-		return $this->rederView('home.index')->with('selected_main_menu_item','Glass Earrings');
+		return $this->renderView('home.index')->with('selected_main_menu_item','Glass Earrings');
 	}
 
 }

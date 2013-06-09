@@ -8,4 +8,7 @@ class Product extends Eloquent{
      */
     protected $table = 'product';
     
+    public function group(){
+        return $this->belongsTo('ProductGroup','id');
+    }
 }

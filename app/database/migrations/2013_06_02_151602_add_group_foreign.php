@@ -16,10 +16,10 @@ class AddGroupForeign extends Migration
         Schema::table(
             'product',
             function (Blueprint $table) {
-                $table->integer('group_id')->unsigned()->index();
-                $table->foreign('group_id', 'group_foreign_key')->references('id')->on('product_group')
-                    ->on_delete('restrict')
-                    ->on_update('cascade');
+                $table->string('group_id')->nullable()->index();
+                $table->foreign('group_id')->references('id')->on('product_group')
+                    ->onDelete('SET NULL')
+                    ->onUpdate('CASCADE');
             }
         );
     }
@@ -34,7 +34,7 @@ class AddGroupForeign extends Migration
         Schema::table(
             'product',
             function (Blueprint $table) {
-                $table->dropForeign('group_foreign_key');
+                $table->dropForeign('product_group_id_foreign');
                 $table->dropColumn('group_id');
             }
         );
