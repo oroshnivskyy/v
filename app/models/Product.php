@@ -6,7 +6,7 @@ class Product extends Eloquent{
      *
      * @var string
      */
-    protected $table = 'product';
+    protected $table = 'products';
     
     public function group(){
         return $this->belongsTo('ProductGroup','id');

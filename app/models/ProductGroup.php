@@ -6,7 +6,7 @@ class ProductGroup extends Eloquent{
      *
      * @var string
      */
-    protected $table = 'product_group';
+    protected $table = 'products_group';
     
     public function products(){
         return $this->hasMany('Product','group_id');
