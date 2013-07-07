@@ -9,6 +9,6 @@ class Product extends Eloquent{
     protected $table = 'products';
     
     public function group(){
-        return $this->belongsTo('ProductGroup','id');
+        return $this->belongsTo('ProductGroup','group_id');
     }
 }

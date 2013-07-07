@@ -14,7 +14,7 @@ class CreateProductGroupTable extends Migration
     public function up()
     {
         Schema::create(
-            'products_group',
+            'products_groups',
             function (Blueprint $table) {
                 $table->string('id');
                 $table->string('name');
@@ -29,7 +29,7 @@ class CreateProductGroupTable extends Migration
             'products',
             function (Blueprint $table) {
                 $table->string('group_id')->index();
-                $table->foreign('group_id')->references('id')->on('products_group')
+                $table->foreign('group_id')->references('id')->on('products_groups')
                     ->onDelete('RESTRICT')
                     ->onUpdate('CASCADE');
             }
@@ -50,7 +50,7 @@ class CreateProductGroupTable extends Migration
                 $table->dropColumn('group_id');
             }
         );
-        Schema::drop('products_group');
+        Schema::drop('products_groups');
     }
 
 }

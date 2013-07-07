@@ -6,7 +6,7 @@ class ProductGroup extends Eloquent{
      *
      * @var string
      */
-    protected $table = 'products_group';
+    protected $table = 'products_groups';
     
     public function products(){
         return $this->hasMany('Product','group_id');
@@ -21,6 +21,6 @@ class ProductGroup extends Eloquent{
     }
     
     public static function getActive(){
-        return static::where('is_enabled','=',1)->where('parent_id')->with('childGroups');
+        return static::where('is_enabled','=',1)->where('parent_id','=','')->with('childGroups');
     }
 }

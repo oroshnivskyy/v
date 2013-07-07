@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://www.jewelery.lc',
+	'url' => 'http://www.etno.lc',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return array(
 	|
 	*/
 
-	'locale' => 'ru',
+	'locale' => 'en',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -114,7 +114,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-        'Way\Generators\GeneratorsServiceProvider'
+        'Way\Generators\GeneratorsServiceProvider',
+        'Frozennode\Administrator\AdministratorServiceProvider',
 
 
     ),

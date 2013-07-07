@@ -17,20 +17,20 @@
                     <ol id="cart-sidebar" class="mini-products-list">
                         <li class="item">
                             <div class="product-control-buttons">
-                                <a href="http://livedemo00.template-help.com/magento_42124/checkout/cart/delete/id/578/uenc/aHR0cDovL2xpdmVkZW1vMDAudGVtcGxhdGUtaGVscC5jb20vbWFnZW50b180MjEyNC8,/"
+                                <a href=""
                                    title="Remove This Item"
                                    onclick="return confirm('Are you sure you would like to remove this item from the shopping cart?');"
                                    class="btn-remove">Remove This Item</a>
-                                <a href="http://livedemo00.template-help.com/magento_42124/checkout/cart/configure/id/578/"
+                                <a href=""
                                    title="Edit item" class="btn-edit">Edit item</a>
                             </div>
                             <a href="http://livedemo00.template-help.com/magento_42124/pearl-cudblaz.html"
                                title="Pearl cudblaz" class="product-image"><img
-                                    src="http://livedemo00.template-help.com/magento_42124/media/catalog/product/cache/1/thumbnail/70x70/9df78eab33525d08d6e5fb8d27136e95/o/r/original_xms11-116-b.jpg"
+                                    src=""
                                     width="70" height="70" alt="Pearl cudblaz"/></a>
 
                             <p class="product-name"><a
-                                    href="http://livedemo00.template-help.com/magento_42124/pearl-cudblaz.html">Pearl
+                                    href="">Pearl
                                     cudblaz</a></p>
 
                             <div class="clear"></div>
@@ -42,10 +42,10 @@
                     </ol>
                     <div class="actions">
                         <button type="button" title="Checkout" class="button"
-                                onclick="setLocation('http://livedemo00.template-help.com/magento_42124/checkout/onepage/')">
+                                onclick="setLocation('')">
                             <span><span>Checkout</span></span></button>
                         <button type="button" title="My Cart" class="button"
-                                onclick="setLocation('http://livedemo00.template-help.com/magento_42124/checkout/cart/')">
+                                onclick="setLocation('')">
                             <span><span>My Cart</span></span></button>
                     </div>
                 </div>

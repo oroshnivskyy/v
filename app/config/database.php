@@ -49,9 +49,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'jewelery',
-			'username'  => 'jewelery',
-			'password'  => 'jewelery',
+			'database'  => 'etno',
+			'username'  => 'etno',
+			'password'  => 'etno',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
