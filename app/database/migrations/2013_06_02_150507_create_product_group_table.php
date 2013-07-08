@@ -16,19 +16,20 @@ class CreateProductGroupTable extends Migration
         Schema::create(
             'products_groups',
             function (Blueprint $table) {
-                $table->string('id');
+                $table->increments('id');
                 $table->string('name');
+                $table->string('url');
                 $table->string('image')->nullable();
                 $table->string('parent_id')->index();
                 $table->boolean('is_enabled');
-                $table->primary('id');
+                $table->index('url');
             }
         );
 
         Schema::table(
             'products',
             function (Blueprint $table) {
-                $table->string('group_id')->index();
+                $table->integer('group_id')->unsigned()->index();
                 $table->foreign('group_id')->references('id')->on('products_groups')
                     ->onDelete('RESTRICT')
                     ->onUpdate('CASCADE');

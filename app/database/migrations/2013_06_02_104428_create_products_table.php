@@ -18,11 +18,16 @@ class CreateProductsTable extends Migration
             function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('name');
+                $table->string('title');
+                $table->string('url');
+                $table->string('meta_keywords');
+                $table->string('meta_description');
                 $table->text('description');
                 $table->string('image');
                 $table->integer('cost');
                 $table->integer('count');
                 $table->timestamps();
+                $table->index('url');
             }
         );
     }

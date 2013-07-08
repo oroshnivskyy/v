@@ -6,17 +6,17 @@ class ProductGroupTableSeeder extends Seeder
         DB::table('products_groups')->delete();
         ProductGroup::insert(
             [
-                ['name' => 'Женские', 'id' => 'for-woman', 'image'=>'slide1.jpg', 'is_enabled' =>true],
-                ['name' => 'Мужские', 'id' => 'for-man','image'=>'slide2.jpg', 'is_enabled' =>true],
-                ['name' => 'Детские', 'id' => 'for-children','image'=>'slide3.jpg', 'is_enabled' =>true]
+                ['name' => 'Женские', 'url' => 'for-woman', 'image'=>'slide1.jpg', 'is_enabled' =>true],
+                ['name' => 'Мужские', 'url' => 'for-man','image'=>'slide2.jpg', 'is_enabled' =>true],
+                ['name' => 'Детские', 'url' => 'for-children','image'=>'slide3.jpg', 'is_enabled' =>true]
             ]
         );
         
-        $earringsId = ProductGroup::find('for-children')->id;
+        $earringsId = ProductGroup::where('url','=','for-children')->get(['url'])->first()->url;
         ProductGroup::insert(
             [
-                ['name' => 'Для девочек', 'id' => 'for-girls', 'parent_id' => $earringsId, 'is_enabled' =>true],
-                ['name' => 'Для мальчиков', 'id' => 'for-boys', 'parent_id' => $earringsId, 'is_enabled' =>true],
+                ['name' => 'Для девочек', 'url' => 'for-girls', 'parent_id' => $earringsId, 'is_enabled' =>true],
+                ['name' => 'Для мальчиков', 'url' => 'for-boys', 'parent_id' => $earringsId, 'is_enabled' =>true],
             ]
         );
     }

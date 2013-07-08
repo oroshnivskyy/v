@@ -25,10 +25,6 @@ class CreateProductImagesTable extends Migration {
                     ->onUpdate('CASCADE');
         }
         );
-        
-        Schema::table('products', function(Blueprint $table){
-                $table->dropColumn('image');
-            });
     }
 
     /**
@@ -38,10 +34,6 @@ class CreateProductImagesTable extends Migration {
      */
     public function down()
     {
-        Schema::table('products', function(Blueprint $table){
-                $table->string('image')->nullable();
-            });
-
         Schema::drop('product_images');
     }
 
