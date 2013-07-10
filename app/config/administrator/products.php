@@ -18,8 +18,8 @@ return [
             'title' => 'Url'
         ],
         'title' => ['title'=>'Title'],
-//        'meta_keywords' => ['title'=>'Keywords'],
-//        'meta_description' => ['title'=>'Meta Description'],
+        'meta_keywords' => ['title'=>'Keywords'],
+        'meta_description' => ['title'=>'Meta Description'],
         'group' => [
             'title' => 'Group',
             'relationship' => 'group',
@@ -27,7 +27,7 @@ return [
         ],
         'image' => [
             'title' => 'Main image',
-            'output' => '<img src="'.public_path().'img/uploaded/products/landscape/(:value)">'
+            'output' => '<img src="/img/uploaded/products/landscape/(:value)">'
         ]
 
     ],
@@ -45,11 +45,11 @@ return [
             'title' => 'Main image',
             'type' => 'image',
             'naming' => 'random',
-            'location' => public_path() . 'img/uploaded/products/base',
+            'location' => public_path() . '/img/uploaded/products/base/',
             'size_limit' => 10,
             'sizes' => [
-                [300,300,'fit', public_path() . 'img/uploaded/products/main'],
-                [300,300,'landscape', public_path() . 'img/uploaded/products/landscape']
+                [300,300,'fit', public_path() . '/img/uploaded/products/main/',100],
+                [150,100,'landscape', public_path() . '/img/uploaded/products/landscape/',100]
             ]
         ]
     ],
