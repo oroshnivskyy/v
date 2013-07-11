@@ -48,7 +48,8 @@ return array(
 	 *	)
 	 */
 	'menu' => array(
-        'products'
+        'products',
+        'groups',
     ),
 
 	/**

@@ -7,6 +7,18 @@ class ProductGroup extends Eloquent{
      * @var string
      */
     protected $table = 'products_groups';
+
+    public static $rules = [
+        'name' => array('required', 'min:5'),
+        'url' =>array('required','regex:/^[a-z\d][a-z\d\\-]{5,}[a-z\d]$/'),
+        'title' => array('required',),
+        'meta_keywords' => array('required',),
+        'meta_description' => array('required',),
+    ];
+    public static $messages = array(
+        'required' => 'Please enter :attribute',
+        'url.regex' => 'Wrong url, must be only a-z 1-9 and -',
+    );
     
     public function products(){
         return $this->hasMany('Product','group_id');
@@ -17,7 +29,7 @@ class ProductGroup extends Eloquent{
     }
     
     public function parentGroup(){
-        return $this->belongsTo('ProductGroup','id');
+        return $this->belongsTo('ProductGroup','parent_id');
     }
     
     public static function getActive(){

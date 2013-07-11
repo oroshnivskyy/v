@@ -12,7 +12,7 @@ class ProductGroupTableSeeder extends Seeder
             ]
         );
         
-        $earringsId = ProductGroup::where('url','=','for-children')->get(['url'])->first()->url;
+        $earringsId = ProductGroup::where('url','=','for-children')->get(['id'])->first()->id;
         ProductGroup::insert(
             [
                 ['name' => 'Для девочек', 'url' => 'for-girls', 'parent_id' => $earringsId, 'is_enabled' =>true],

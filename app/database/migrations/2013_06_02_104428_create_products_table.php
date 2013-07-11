@@ -25,7 +25,10 @@ class CreateProductsTable extends Migration
                 $table->text('description');
                 $table->string('image');
                 $table->integer('cost');
-                $table->integer('count');
+                $table->smallInteger('count');
+                $table->smallInteger('rating');
+                $table->string('bottom_text');
+                $table->string('image_alt');
                 $table->timestamps();
                 $table->index('url');
             }

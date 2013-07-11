@@ -9,4 +9,3 @@ composer.lock
 /sess
 /.idea
 Guardfile
-/public/img/uploaded/products

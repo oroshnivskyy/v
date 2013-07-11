@@ -28,6 +28,9 @@ return [
         'image' => [
             'title' => 'Main image',
             'output' => '<img src="/img/uploaded/products/landscape/(:value)">'
+        ],
+        'rating' => [
+            'title' => 'Rating',
         ]
 
     ],
@@ -36,11 +39,14 @@ return [
         'description' => ['title' => 'Description', 'type' => 'textarea'],
         'cost' => ['title' => 'Cost', 'type' => 'number', 'symbol'=>'₴', 'thousands_separator' => ' '],
         'count' => ['title' => 'Count', 'type' => 'text'],
+        'rating' => ['title' => 'Rating', 'type' => 'number'],
         'group' => ['title' => 'Group', 'type' => 'relationship'],
         'title' => ['title'=>'Title', 'type'=>'text'],
         'url' => ['title'=>'Url', 'type'=>'text'],
         'meta_keywords' => ['title'=>'Meta keywords', 'type'=>'textarea'],
         'meta_description' => ['title'=>'Meta Description', 'type'=>'textarea'],
+        'bottom_text' => ['title'=>'Bottom text', 'type'=>'textarea'],
+        'image_alt' => ['title'=>'Image alt', 'type'=>'text'],
         'image' => [
             'title' => 'Main image',
             'type' => 'image',
@@ -57,5 +63,20 @@ return [
         'update' => true,
         'delete' => true,
         'create' => true
+    ],
+    
+    'filters' => [
+        'id',
+        'name' => [
+            'title' => 'Name',
+        ],
+        'title' => [
+            'title' => 'Title',
+        ],
+        'group' => [
+            'type' => 'relationship',
+            'title' => 'Group',
+            'name_field' => 'name',
+        ]
     ]
 ];
