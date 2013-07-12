@@ -36,4 +36,16 @@ class Product extends Eloquent{
     public function images(){
         return $this->hasMany('ProductImage', 'product_id');
     }
+
+    public function getImageUrl(){
+        return static::imageWebPath().'main/'.$this->image;
+    }
+    
+    public static function imageWebPath(){
+        return '/img/uploaded/products/';
+    }
+
+    public static function uploadPath(){
+        return public_path().static::imageWebPath();
+    }
 }

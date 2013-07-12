@@ -3,6 +3,7 @@ class ProductGroupTableSeeder extends Seeder
 {
     public function run()
     {
+        DB::table('products')->delete();
         DB::table('products_groups')->delete();
         ProductGroup::insert(
             [

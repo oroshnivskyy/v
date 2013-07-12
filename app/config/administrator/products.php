@@ -51,11 +51,11 @@ return [
             'title' => 'Main image',
             'type' => 'image',
             'naming' => 'random',
-            'location' => public_path() . '/img/uploaded/products/base/',
+            'location' => Product::uploadPath() . 'base/',
             'size_limit' => 10,
             'sizes' => [
-                [300,300,'fit', public_path() . '/img/uploaded/products/main/',100],
-                [150,100,'landscape', public_path() . '/img/uploaded/products/landscape/',100]
+                [300,300,'fit', Product::uploadPath().'main/',100],
+                [150,100,'landscape', Product::uploadPath() . 'landscape/',100]
             ]
         ]
     ],

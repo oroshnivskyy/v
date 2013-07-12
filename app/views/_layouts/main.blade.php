@@ -56,7 +56,9 @@
     <div class="page">
         @include('_layouts.header')
         @include('composers.main_menu')
-        @yield('main')
+        <div id="main">
+            @yield('main')
+        </div>
         @include('_layouts.footer')
     </div>
     {{ HTML::script('js/lib/superfish.js') }}

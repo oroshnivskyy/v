@@ -13,6 +13,7 @@ return array(
 	|
 	*/
 
+    'profiler' => true,
 	'fetch' => PDO::FETCH_CLASS,
 
 	/*

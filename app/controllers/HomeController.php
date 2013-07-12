@@ -1,23 +1,26 @@
 <?php
 
-class HomeController extends BaseController {
+class HomeController extends BaseController
+{
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
+    public function getIndex()
+    {
+        /**
+         * @var Illuminate\Pagination\Paginator $products
+         */
+        $products = Product::with(
+            [
+                'group' => function ($query) {
+                    $query->select(['url','id']);
+                }
+            ]
+        )->orderBy('rating', 'desc')->paginate(9,['name', 'url', 'image', 'image_alt', 'cost', 'group_id']);
+        
+        if(Request::ajax()){
+            return View::make('home.page', ['products' => $products]);
+        }
 
-	public function getIndex()
-	{
-		return $this->renderView('home.index')->with('selected_main_menu_item','Glass Earrings');
-	}
+        return $this->renderView('home.index', ['products' => $products])->with('selected_main_menu_item', 6);
+    }
 
 }
