@@ -11,18 +11,6 @@ jQuery(document).ready(function () {
         jQuery(this).toggleClass("active");
     });
     if (jQuery('.container_24').width() < 450) {
-        jQuery('.sf-menu').removeClass('sf-js-enabled').find('li.parent').append('<strong></strong>');
-        jQuery('.sf-menu li.parent strong').on("click", function () {
-            if (jQuery(this).attr('class') == 'opened') {
-                jQuery(this).removeClass().parent('li.parent').find('> ul').slideToggle();
-            }
-            else {
-                jQuery(this).addClass('opened').parent('li.parent').find('> ul').slideToggle();
-            }
-        });
-    }
-    ;
-    if (jQuery('.container_24').width() < 450) {
         jQuery('.truncated span').click(function () {
             jQuery(this).parent().find('.truncated_full_value').stop().slideToggle();
         })
@@ -114,7 +102,6 @@ jQuery(document).ready(function () {
     jQuery('.product-view .product-img-box .more-views li:nth-child(4)').last().addClass('item-4');
     jQuery('.header .row-2 .links').first().addClass('LoginLink');
     jQuery('#checkout-progress-state li:odd').addClass('odd');
-    jQuery('.product-view .product-img-box .product-image').append('<span></span>');
     if (jQuery('.container_24').width() < 450) {
         jQuery('.my-account table td.order-id').prepend('<strong>Order #:</strong>');
         jQuery('.my-account table td.order-date').prepend('<strong>Date: </strong>');

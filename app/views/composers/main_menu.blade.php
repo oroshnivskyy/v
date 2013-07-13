@@ -6,6 +6,7 @@
     });
 </script>
 @stop
+<?php $selected_main_menu_item=isset($selected_main_menu_item)?$selected_main_menu_item:-5; ?>
 <div class="nav-container">
     <div class="container_24">
         <div class="grid_24">

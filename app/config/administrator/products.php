@@ -55,6 +55,7 @@ return [
             'size_limit' => 10,
             'sizes' => [
                 [300,300,'fit', Product::uploadPath().'main/',100],
+                [1500,1500,'fit', Product::uploadPath().'big/',100],
                 [150,100,'landscape', Product::uploadPath() . 'landscape/',100]
             ]
         ]
@@ -78,5 +79,10 @@ return [
             'title' => 'Group',
             'name_field' => 'name',
         ]
-    ]
+    ],
+    'link' => function($model)
+    {
+        $groupUrl = ProductGroup::find($model->group_id,['url'])->url;
+        return URL::route('product', array($groupUrl,$model->url));
+    },
 ];

@@ -63,9 +63,12 @@
     </div>
     {{ HTML::script('js/lib/superfish.js') }}
     {{ HTML::script('js/lib/jquery.easing.1.3.js') }}
-    {{ HTML::script('js/lib/scripts.js') }}
+    {{-- HTML::script('js/lib/scripts.js') --}}
     {{ HTML::script('js/lib/jquery.jcarousel.min.js') }}
-    {{ HTML::script('js/lib/jquery.iosslider.min.js') }}
+    {{ HTML::script('//code.jquery.com/ui/1.10.3/jquery-ui.js') }}
+
+    {{ HTML::style('css/zoomIt.css') }}
+    {{ HTML::script('js/lib/zoom/zoomit.jquery.js') }}
     <?php /**
     {{ HTML::script('//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js') }}
     {{ HTML::script('js/lib/easyTooltip.js') }}
