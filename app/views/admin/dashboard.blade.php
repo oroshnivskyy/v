@@ -1,0 +1,1 @@
+<a href="{{url('cache-clear')}}">>>>>>Clear cache<<<<<<</a>
