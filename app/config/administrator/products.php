@@ -27,7 +27,7 @@ return [
         ],
         'image' => [
             'title' => 'Main image',
-            'output' => '<img src="/img/uploaded/products/landscape/(:value)">'
+            'output' => '<img src="/img/uploaded/products/medium/(:value)">'
         ],
         'rating' => [
             'title' => 'Rating',
@@ -56,7 +56,7 @@ return [
             'sizes' => [
                 [300,300,'fit', Product::uploadPath().'main/',100],
                 [1500,1500,'fit', Product::uploadPath().'big/',100],
-                [150,100,'landscape', Product::uploadPath() . 'landscape/',100]
+                [210,210,'fit', Product::uploadPath() . 'medium/',100]
             ]
         ]
     ],

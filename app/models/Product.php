@@ -46,6 +46,9 @@ class Product extends Eloquent{
     public function getBigImageUrl(){
         return static::imageWebPath().'big/'.$this->image;
     }
+    public function getMediumImageUrl(){
+        return static::imageWebPath().'medium/'.$this->image;
+    }
     
     public static function imageWebPath(){
         return '/img/uploaded/products/';

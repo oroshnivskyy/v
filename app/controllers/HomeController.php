@@ -20,7 +20,7 @@ class HomeController extends BaseController
             return View::make('home.page', ['products' => $products]);
         }
 
-        return $this->renderView('home.index', ['products' => $products])->with('selected_main_menu_item', 6);
+        return $this->renderView('home.index', ['products' => $products]);
     }
 
 }

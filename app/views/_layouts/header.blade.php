@@ -27,8 +27,10 @@
                             </ul>
                         </div>
                         */?>
+                        {{--
                         @include('composers.currency')
                         @include('composers.language')
+                        --}}
                     </div>
                     <div class="quick-access">
                         <div class="header-links">
@@ -55,14 +57,14 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <h1 class="logo"><strong>Magento Commerce</strong><a
-                        href="/" title="Magento Commerce" class="logo"><img
+                <h1 class="logo"><strong>{{$title}}</strong><a
+                        href="{{route('home')}}" title="{{$title}}" class="logo"><img
                             src="/img/logo.png"
-                            alt="Magento Commerce"/></a></h1>
+                            alt="{{$title}}"/></a></h1>
 
                 <div class="clear"></div>
                 <div class="row-2">
-                    @include('composers.cart')
+                    {{--@include('composers.cart')
                     <p class="welcome-msg">Welcome to our online store! </p>
 
                     <div class="clear"></div>
@@ -76,6 +78,7 @@
                             <div id="search_autocomplete" class="search-autocomplete"></div>
                         </div>
                     </form>
+                    --}}
                 </div>
                 <div class="clear"></div>
             </div>

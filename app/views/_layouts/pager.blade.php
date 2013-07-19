@@ -1,25 +1,14 @@
 <?php $currentPage=$pager->getCurrentPage() ?>
-<script>
-    $(function(){
-        $('ol').find('a').click(function(){
-            var page =$(this).data('page');
-            $.get('{{route('home')}}', {page: page}, function(data){
-                $('#main').html(data);
-            })
-            return false;
-        });
-    });
-</script>
 <div class="pager">
     <p class="amount">
-        Items {{$pager->getFrom()}} to {{$pager->getTo()}} of {{$pager->getTotal()}} total </p>
+        Товары с {{$pager->getFrom()}} до {{$pager->getTo()}} всех: {{$pager->getTotal()}}</p>
 
     <div class="pages">
         <strong>Page:</strong>
         <ol>
             @if($currentPage>1)
             <li>
-                <a title="Previous" href=""
+                <a title="Предыдущие" href=""
                    class="previous i-previous" data-page="{{$currentPage-1}}">
                     <<
                 </a>
@@ -38,7 +27,7 @@
             @endfor
             @if($currentPage<$pager->getLastPage())
             <li>
-                <a title="Next" href="" 
+                <a title="Следующие" href="" 
                    class="next i-next" data-page="{{$currentPage+1}}">
                     >>
                 </a>

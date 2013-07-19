@@ -1,6 +1,6 @@
 {
     "require": {
-        "laravel/framework": "4.0.3",
+        "laravel/framework": "4.0.*",
         "barryvdh/laravel-ide-helper": "dev-master",
         "way/generators": "dev-master",
         "frozennode/administrator": "dev-master",
@@ -12,7 +12,6 @@
         "classmap": [
             "app/commands",
             "app/controllers",
-            "app/view_composers",
             "app/models",
             "app/database/migrations",
             "app/database/seeds",

@@ -7,6 +7,9 @@ class ProductController extends BaseController
 
         return $this->renderView('product.show', ['product' => $product])
             ->with('title', $product->title)
-            ->with('selected_main_menu_item',$product->group_id);
+            ->with('selected_main_menu_item',$product->group_id)
+            ->with('metaDescription',$product->meta_description)
+            ->with('metaKeywords',$product->meta_keywords)
+            ->with('bodyClass', ' catalog-product-view');
     }
 }

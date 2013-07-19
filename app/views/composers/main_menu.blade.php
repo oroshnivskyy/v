@@ -11,7 +11,7 @@
     <div class="container_24">
         <div class="grid_24">
             <div id="menu-icon">Categories</div>
-            <ul id="nav" class="sf-menu">
+            <ul id="nav" class="sf-menu" style="margin-top: 10px;">
                 @foreach($main_menu_items as $item)
                 <li
                 @if($selected_main_menu_item==$item['id']||isset($item->child_groups[$selected_main_menu_item]))
@@ -33,6 +33,7 @@
                 @endforeach
             </ul>
         </div>
+        <div class="menu-footer">
         <div class="clear"></div>
     </div>
 </div>

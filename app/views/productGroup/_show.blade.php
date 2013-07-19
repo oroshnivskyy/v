@@ -1,7 +1,18 @@
-<div class="main-container col1-layout">
+<div class="main-container col1-right-layout">
     <div class="container_24">
         <div class="grid_24">
             <div class="main">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li class="home">
+                            <a href="{{route('home')}}" title="Go to Home Page">Home</a>
+                            <span>></span>
+                        </li>
+                        <li class="category4">
+                            <strong>{{$group->name}}</strong>
+                        </li>
+                    </ul>
+                </div>
                 <div class="col-main alpha grid_24 omega">
                     <div class="std">
                         <div class="clear"></div>
@@ -43,8 +54,7 @@
             </div>
             @include('_layouts.pager',['pager'=>$products])
             <div class="clear"></div>
+            </div>
         </div>
     </div>
-    <div class="clear"></div>
-</div>
 </div>

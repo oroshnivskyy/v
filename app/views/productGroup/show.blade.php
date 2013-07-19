@@ -4,10 +4,10 @@
 <script>
     $(function(){
         effects.hover();
-        pager.paginate('{{route('home')}}');
+        pager.paginate('{{route('product_group', [$group->url])}}');
     })
 </script>
 @stop
 @section('main')
-@include('home.page')
+@include('productGroup._show')
 @stop

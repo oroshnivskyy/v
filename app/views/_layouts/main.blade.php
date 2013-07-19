@@ -4,9 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>{{$title}}</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <meta name="description" content="Default Description"/>
-    <meta name="keywords" content="Magento, Varien, E-commerce"/>
-    <meta name="robots" content="INDEX,FOLLOW"/>
+    <meta name="description" content="{{isset($metaDescription)?$metaDescription:''}}"/>
+    <meta name="keywords" content="{{isset($metaKeywords)?$metaKeywords:''}}"/>
     {{ HTML::style('css/default/favicon.ico',array('rel'=>'icon', 'type'=>'image/x-icon')) }}
     {{ HTML::style('css/default/favicon.ico',array('rel'=>'shortcut icon', 'type'=>'image/x-icon')) }}
     {{ HTML::style('//fonts.googleapis.com/css?family=Playfair+Display') }}
@@ -16,10 +15,6 @@
     {{ HTML::style('css/default/css/styles.css') }}
     {{ HTML::style('css/default/css/responsive.css') }}
     {{ HTML::style('css/default/css/superfish.css') }}
-    {{ HTML::style('css/default/css/camera.css') }}
-    {{ HTML::style('css/base/css/widgets.css') }}
-    {{ HTML::style('css/default/css/ecommerceteam/cloud-zoom.css') }}
-    {{ HTML::style('css/default/css/print.css',array('media'=>'print')) }}
     <!--[if lt IE 9]>
     <style>
         body {
@@ -41,8 +36,18 @@
             alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/></a>
     </div>
     <![endif]-->
+    {{ HTML::script('js/lib/superfish.js') }}
+    {{ HTML::script('js/lib/jquery.easing.1.3.js') }}
+    {{-- HTML::script('js/lib/scripts.js') --}}
+    {{ HTML::script('js/lib/jquery.jcarousel.min.js') }}
+    {{ HTML::script('//code.jquery.com/ui/1.10.3/jquery-ui.js') }}
+
+    {{ HTML::style('css/zoomIt.css') }}
+    {{ HTML::script('js/lib/zoom/zoomit.jquery.js') }}
+    {{ HTML::script('js/scripts/effects.js') }}
+    {{ HTML::script('js/scripts/pager.js') }}
 </head>
-<body class=" cms-index-index cms-home">
+<body class="{{isset($bodyClass)?$bodyClass:'cms-index-index cms-home'}}">
 <div class="wrapper">
     <noscript>
         <div class="global-site-notice noscript">
@@ -61,14 +66,6 @@
         </div>
         @include('_layouts.footer')
     </div>
-    {{ HTML::script('js/lib/superfish.js') }}
-    {{ HTML::script('js/lib/jquery.easing.1.3.js') }}
-    {{-- HTML::script('js/lib/scripts.js') --}}
-    {{ HTML::script('js/lib/jquery.jcarousel.min.js') }}
-    {{ HTML::script('//code.jquery.com/ui/1.10.3/jquery-ui.js') }}
-
-    {{ HTML::style('css/zoomIt.css') }}
-    {{ HTML::script('js/lib/zoom/zoomit.jquery.js') }}
     <?php /**
     {{ HTML::script('//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js') }}
     {{ HTML::script('js/lib/easyTooltip.js') }}

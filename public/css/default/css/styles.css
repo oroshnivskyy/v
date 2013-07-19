@@ -10,7 +10,11 @@ html {
     height: 100%;
     width: 100%;
 }
-
+.menu-footer {
+    background: url(../images/bg.png) no-repeat scroll 0 bottom transparent;
+    padding-bottom: 30px;
+    margin: 0 0px 20px;
+}
 .catalog-product-compare-index > div {
     min-width: 600px;
 }
@@ -1711,8 +1715,7 @@ tr.summary-details-excluded {
 
 /* Header ================================================================================ */
 .header-container {
-    background: url(../images/header-bg.png) 0 125px no-repeat;
-    padding-bottom: 48px;
+    background: url("../images/header-bg.png") no-repeat scroll 0 80px transparent
 }
 
 .header {

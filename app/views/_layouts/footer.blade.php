@@ -18,6 +18,7 @@
                                         <a href="#">Privacy Policy</a>
                                     </li>
                                 </ul>
+                                {{--
                                 <ul class="links">
                                     <li class="first"><a href="#" title="Site Map">Site Map</a>
                                     </li>
@@ -34,6 +35,7 @@
                                         <a href="#" title="Contact Us">Contact Us</a>
                                     </li>
                                 </ul>
+                                --}}
                             </div>
                         </div>
                     </div>
@@ -42,11 +44,13 @@
                         Jewelery Store. All Rights Reserved.
                     </address>
                     <div class="clear"></div>
+                    {{--
                     <ul class="social-buttons">
                         <li class="item-1"><a href="#"></a></li>
                         <li class="item-2"><a href="#"></a></li>
                         <li class="item-3"><a href="#"></a></li>
                     </ul>
+                    --}}
                 </div>
             </div>
         </div>
