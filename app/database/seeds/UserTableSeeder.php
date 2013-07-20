@@ -11,14 +11,14 @@ class UserTableSeeder extends Seeder {
             [
                 'username' => 'rosh',
                 'email' => 'oleg.roshnivsky@gmail.com',
-                'password' => Hash::make('256mar'),
+                'password' => Hash::make('123'),
                 'is_admin' => true,
                 'active' => true
             ],
             [
                 'username' => 'maryana',
                 'email' => 'maryanka60@gmail.com',
-                'password' => Hash::make('311205'),
+                'password' => Hash::make('123'),
                 'is_admin' => true,
                 'active' => true
             ]
