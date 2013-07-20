@@ -1,6 +1,7 @@
 <?php
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@getIndex']);
 Route::resource('login', 'LoginController', ['only' => ['index', 'store']]);
+Route::resource('register', 'RegisterController', ['only' => ['index', 'store']]);
 Route::get(
     'cache-clear',
     function () {
@@ -11,6 +12,8 @@ Route::get(
         return Redirect::back();
     }
 );
+
+Route::get('delivery_and_payment',['as'=>'delivery_and_payment', 'uses'=>'ResourcesController@delivery']);
 
 Route::group(
     ['prefix' => '{groupUrl}'],

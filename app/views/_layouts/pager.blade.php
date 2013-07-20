@@ -1,10 +1,11 @@
 <?php $currentPage=$pager->getCurrentPage() ?>
+@if($pager->getLastPage()>1)
 <div class="pager">
     <p class="amount">
         Товары с {{$pager->getFrom()}} до {{$pager->getTo()}} всех: {{$pager->getTotal()}}</p>
 
     <div class="pages">
-        <strong>Page:</strong>
+        <strong>Страница:</strong>
         <ol>
             @if($currentPage>1)
             <li>
@@ -36,3 +37,4 @@
         </ol>
     </div>
 </div>
+@endif

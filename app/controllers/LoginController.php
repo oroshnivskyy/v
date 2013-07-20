@@ -9,7 +9,7 @@ class LoginController extends Controller{
             'username' => Input::get('username'),
             'password' => Input::get('password')
         ];
-        if (Auth::attempt($userData)) {
+        if (Auth::attempt($userData, true, true)) {
             return Redirect::to('admin');
         } else {
             return Redirect::to('login')

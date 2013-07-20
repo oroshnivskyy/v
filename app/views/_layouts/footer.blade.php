@@ -5,18 +5,22 @@
                 <div class="footer">
                     <div class="footer-cols-wrapper">
                         <div class="footer-col">
-                            <h4>Information</h4>
+                            <h4>Информация</h4>
 
                             <div class="footer-col-content">
                                 <ul>
+                                    {{--
                                     <li>
-                                        <a href="#">About Us</a></li>
+                                        <a href="#">О нас</a></li>
                                     <li>
-                                        <a href="#">Customer Service</a>
+                                        --}}
+                                        <a href="{{route('delivery_and_payment')}}">Доставка и оплата</a>
                                     </li>
+                                    {{--
                                     <li class="last privacy">
                                         <a href="#">Privacy Policy</a>
                                     </li>
+                                    --}}
                                 </ul>
                                 {{--
                                 <ul class="links">
@@ -41,7 +45,7 @@
                     </div>
                     <address>&copy;
                         <script type="text/javascript"> document.write((new Date()).getFullYear());</script>
-                        Jewelery Store. All Rights Reserved.
+                        Интернет-магазин «<a href="{{route('home')}}">Vushuvanka.com.ua</a>»
                     </address>
                     <div class="clear"></div>
                     {{--

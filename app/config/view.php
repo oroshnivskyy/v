@@ -28,6 +28,6 @@ return array(
 
 	'pagination' => 'pagination::slider',
     
-    'title' => 'Вышиванки',
+    'title' => 'Вышиванки для мужчин женщин и детей',
 
 );
