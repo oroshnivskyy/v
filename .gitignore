@@ -1,5 +1,5 @@
 /bootstrap/compiled.php
-/public/packages
+/www/packages
 /vendor
 composer.phar
 composer.lock
@@ -9,3 +9,4 @@ composer.lock
 /sess
 /.idea
 Guardfile
+/app/config/database.php
