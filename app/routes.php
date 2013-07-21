@@ -13,7 +13,7 @@ Route::get(
     }
 );
 
-Route::get('delivery_and_payment',['as'=>'delivery_and_payment', 'uses'=>'ResourcesController@delivery']);
+Route::get('delivery-and-payment',['as'=>'delivery_and_payment', 'uses'=>'ResourcesController@delivery']);
 
 Route::group(
     ['prefix' => '{groupUrl}'],
