@@ -1,32 +1,10 @@
-<div class="header-container">
+<div style=" position: relative; top: -25px;"><div id="vk_like"></div></div>
+<div class="header-container" style="margin-top: -25px;">
     <div class="container_24">
         <div class="grid_24">
             <div class="header">
                 <div class="header-buttons">
                     <div class="row-1">
-                        <?php /** This is not visible
-                        <div class="header-button top-login">
-                            <ul class="links">
-                                <li class="first last"><a
-                                        href="http://livedemo00.template-help.com/magento_42124/customer/account/login/"
-                                        title="Log In" class="Login_link">Log In</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-button menu-list">
-                            <a href="#"></a>
-                            <ul class="links">
-                                <li class="first"><a
-                                        href="/"
-                                        title="My Account">My Account</a></li>
-                                <li><a href="/"
-                                       title="My Cart (1 item)" class="top-link-cart">My Cart (1 item)</a></li>
-                                <li><a href="/"
-                                       title="Checkout" class="top-link-checkout">Checkout</a></li>
-                                <li class=" last"><a href="/"
-                                                     title="My Wishlist">My Wishlist</a></li>
-                            </ul>
-                        </div>
-                        */?>
                         {{--
                         @include('composers.currency')
                         @include('composers.language')
@@ -34,6 +12,9 @@
                     </div>
                     <div class="quick-access">
                         <div class="header-links">
+                                    Электронный ящик:
+                                    <strong><a href="mailto:manager@vushuvanka.com.ua">manager@vushuvanka.com.ua</a></strong>
+       
                             <?php /** Not visible
                             <ul class="links">
                                 <li class="first last"><a
@@ -59,7 +40,7 @@
                 <div class="clear"></div>
                 <h1 class="logo"><strong>{{$title}}</strong><a
                         href="{{route('home')}}" title="{{$title}}" class="logo"><img
-                            src="/img/logo.png"
+                            src="/img/logo.jpg"
                             alt="{{$title}}"/></a></h1>
 
                 <div class="clear"></div>

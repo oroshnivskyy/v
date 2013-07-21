@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>{{$title}}</title>
+    <link rel="icon" type="image/ico" href="/favicon.ico">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <meta name="description" content="{{isset($metaDescription)?$metaDescription:''}}"/>
     <meta name="keywords" content="{{isset($metaKeywords)?$metaKeywords:''}}"/>
@@ -46,6 +47,14 @@
     {{ HTML::script('js/lib/zoom/zoomit.jquery.js') }}
     {{ HTML::script('js/scripts/effects.js') }}
     {{ HTML::script('js/scripts/pager.js') }}
+    {{ HTML::script('//vk.com/js/api/openapi.js?98') }}
+
+    <script type="text/javascript">
+        VK.init({apiId: 3777082, onlyWidgets: true});
+    </script>
+    <script type="text/javascript">
+        VK.Widgets.Like("vk_like", {type: "vertical", height: 18});
+    </script>
 </head>
 <body class="{{isset($bodyClass)?$bodyClass:'cms-index-index cms-home'}}">
 <div class="wrapper">

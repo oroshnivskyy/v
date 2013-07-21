@@ -18,8 +18,6 @@ return [
             'title' => 'Url'
         ],
         'title' => ['title'=>'Title'],
-        'meta_keywords' => ['title'=>'Keywords'],
-        'meta_description' => ['title'=>'Meta Description'],
         'group' => [
             'title' => 'Group',
             'relationship' => 'group',
@@ -27,7 +25,7 @@ return [
         ],
         'image' => [
             'title' => 'Main image',
-            'output' => '<img src="/img/uploaded/products/medium/(:value)">'
+            'output' => '<img style="width: 55px;" src="/img/uploaded/products/medium/(:value)">'
         ],
         'rating' => [
             'title' => 'Rating',

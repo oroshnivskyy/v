@@ -59,7 +59,7 @@
                                                     <div class="std">{{{$product->description}}}
                                                     </div>
                                                 </div>
-                                                <p class="availability in-stock">Availability: <span>In stock</span></p>
+                                                <p class="availability in-stock">Доступность: <span>На складе</span></p>
 
                                                 <div class="price-box">
                                                     <span class="regular-price" id="product-price-43">
