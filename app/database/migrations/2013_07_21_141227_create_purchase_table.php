@@ -14,11 +14,15 @@ class CreatePurchaseTable extends Migration {
     {
         Schema::create('purchase', function(Blueprint $table) {
             $table->increments('id');
-            $table->string('username', 255);
-            $table->string('phone', 255);
-            $table->text('note', 2000);
+            $table->string('username', 255)->default('');
+            $table->string('phone', 255)->default('');
+            $table->text('note', 2000)->default('');
             $table->integer('product_id')->unsigned()->index();
-            $table->string('delivery', 50);
+            $table->string('delivery', 50)->default('');
+            $table->boolean('called')->default(false);
+            $table->boolean('success')->default(false);
+            $table->string('comment')->default('');
+            
             $table->foreign('product_id')->references('id')->on('products')
                 ->onDelete('CASCADE')
                 ->onUpdate('CASCADE');

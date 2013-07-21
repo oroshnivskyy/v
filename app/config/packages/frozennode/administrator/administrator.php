@@ -50,6 +50,7 @@ return array(
 	'menu' => array(
         'products',
         'groups',
+        'orders'
     ),
 
 	/**

@@ -14,7 +14,7 @@ class ProductGroupController extends BaseController {
         $products = Product::where('group_id','=',$group->id);
         if(count($group->childGroups)>0){
             $groupIds = array_map(function($group){ return $group['id'];}, $group->childGroups->toArray());
-            $products->whereIn('group_id', $groupIds);
+            $products->whereIn('group_id', $groupIds, 'or');
         }
 
         $products = $products->paginate(9);
