@@ -14,6 +14,9 @@ return [
         'cost' => [
             'title' => 'Cost',
         ],
+        'size' => [
+            'title' => 'Size',
+        ],
         'url' => [
             'title' => 'Url'
         ],
@@ -36,6 +39,7 @@ return [
         'name' => ['title' => 'Name', 'type' => 'text'],
         'description' => ['title' => 'Description', 'type' => 'textarea'],
         'cost' => ['title' => 'Cost', 'type' => 'number', 'symbol'=>'₴', 'thousands_separator' => ' '],
+        'size' => ['title' => 'Size', 'type' => 'text'],
         'count' => ['title' => 'Count', 'type' => 'text'],
         'rating' => ['title' => 'Rating', 'type' => 'number'],
         'group' => ['title' => 'Group', 'type' => 'relationship'],

@@ -21,10 +21,10 @@ return [
             'relationship' => 'parentGroup',
             'select' => '(:table).name'
         ],
-        'image' => [
-            'title' => 'Main image',
-            'output' => '<img src="/img/uploaded/groups/base/(:value)"  style="width: 150px;">'
-        ]
+//        'image' => [
+//            'title' => 'Main image',
+//            'output' => '<img src="/img/uploaded/groups/base/(:value)"  style="width: 150px;">'
+//        ]
 
     ],
     'edit_fields' => [
