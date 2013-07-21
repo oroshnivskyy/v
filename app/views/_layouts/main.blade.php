@@ -2,11 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>{{$title}}</title>
+    <title>{{{$title}}}</title>
     <link rel="icon" type="image/ico" href="/favicon.ico">
+    <meta http-equiv="cache-control" content="public">
+    <meta http-equiv="EXPIRES" content="{{date('D, j M Y H:I:S e', strtotime("+5 min"))}}">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <meta name="description" content="{{isset($metaDescription)?$metaDescription:''}}"/>
-    <meta name="keywords" content="{{isset($metaKeywords)?$metaKeywords:''}}"/>
+    <meta name="description" content="{{isset($metaDescription)?$metaDescription:'На нашем сайте Вы можете на свой вкус подобрать вышиванки для вас и ваших близких. Вышиванки по самым низким ценам. Вышиванки ручной работы'}}"/>
+    <meta name="keywords" content="{{isset($metaKeywords)?$metaKeywords:'Вышиванки, украинские вышиванки, вышиванки для детей, вышиванки для мужчин, вышиванки для женщин, вышиванки для девушек, вышиванки для мальчиков, ручная робота'}}"/>
     {{ HTML::style('css/default/favicon.ico',array('rel'=>'icon', 'type'=>'image/x-icon')) }}
     {{ HTML::style('css/default/favicon.ico',array('rel'=>'shortcut icon', 'type'=>'image/x-icon')) }}
     {{ HTML::style('//fonts.googleapis.com/css?family=Playfair+Display') }}
@@ -16,6 +18,7 @@
     {{ HTML::style('css/default/css/styles.css') }}
     {{ HTML::style('css/default/css/responsive.css') }}
     {{ HTML::style('css/default/css/superfish.css') }}
+    {{ HTML::style('css/popup.css') }}
     <!--[if lt IE 9]>
     <style>
         body {
@@ -94,5 +97,7 @@
     @section('js')
     @show
 </div>
+    @section('purchase')
+    @show
 </body>
 </html>

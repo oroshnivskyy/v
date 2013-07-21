@@ -16,14 +16,14 @@
                 <li
                 @if($selected_main_menu_item==$item['id']||isset($item->child_groups[$selected_main_menu_item]))
                 class="active" @endif>
-                <a href="{{route('product_group',[$item['url']])}}" class="level-top"><span>{{$item['name']}}</span></a>
+                <a href="{{route('product_group',[$item['url']])}}" class="level-top"><span>{{{$item['name']}}}</span></a>
                 @if(!empty($item['child_groups']))
                 <ul>
                     @foreach($item['child_groups'] as $child_group)
                     <li
                     @if($selected_main_menu_item==$child_group['id']) class="active" @endif>
                     <a href="{{route('product_group',[$child_group['url']])}}">
-                        <span>{{$child_group['name']}}</span>
+                        <span>{{{$child_group['name']}}}</span>
                     </a>
                     </li>
                     @endforeach

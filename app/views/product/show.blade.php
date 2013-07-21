@@ -21,11 +21,11 @@
                             </li>
                             <li>
                                 <a href="{{route('product_group',[$product->group->url])}}"
-                                   title="{{$product->group->title}}">{{$product->group->name}}</a>
+                                   title="{{{$product->group->title}}}">{{{$product->group->name}}}</a>
                                 <span>></span>
                             </li>
                             <li class="product">
-                                <strong>{{$product->name}}</strong>
+                                <strong>{{{$product->name}}}</strong>
                             </li>
                         </ul>
                     </div>
@@ -44,23 +44,25 @@
                                                     <a id="image_zoom" style="display: block;"
                                                        href="{{$product->getBigImageUrl()}}">
                                                         <img class="big" src="{{$product->getImageUrl()}}"
-                                                             alt='' title="{{$product->image_alt}}"/>
+                                                             alt='' title="{{{$product->image_alt}}}"/>
                                                     </a>
                                                 </p>
                                                 {{--@include('product.more_views')--}}
                                             </div>
                                             <div class="product-shop">
                                                 <div class="product-name">
-                                                    <h1>{{$product->name}}</h1>
+                                                    <h1>{{{$product->name}}}</h1>
                                                 </div>
                                                 <div class="short-description">
                                                     <h2>Quick Overview</h2>
 
-                                                    <div class="std">{{{$product->description}}}
+                                                    <div class="std">{{$product->description}}
                                                     </div>
                                                 </div>
                                                 <p class="availability in-stock">Доступность: <span>На складе</span></p>
-
+                                                @if(isset($product->size))
+                                                <p class="availability in-stock">Размер: <span>{{{$product->size}}}</span></p>
+                                                @endif
                                                 <div class="price-box">
                                                     <span class="regular-price" id="product-price-43">
                                                     <span class="price">{{$product->cost}} грн.</span> </span>
@@ -68,7 +70,13 @@
                                                 <div class="clear"></div>
                                                 <div class="add-to-box">
                                                     <div class="add-to-cart">
-                                                        <button type="button" title="Купить" class="button btn-cart">
+                                                        <button type="button" title="Купить" 
+                                                                class="button btn-cart do_buy"
+                                                                data-id="{{$product->id}}"
+                                                                data-name="{{$product->name}}"
+                                                                data-cost="{{$product->cost}}"
+                                                                data-size="{{$product->size}}"
+                                                            >
                                                             <span><span>Купить</span></span>
                                                         </button>
                                                     </div>
@@ -82,7 +90,7 @@
 
                                             <div class="box-collateral-content">
                                                 <div class="std">
-                                                    {{{$product->bottom_text}}}
+                                                    {{$product->bottom_text}}
                                                 </div>
                                             </div>
                                         </div>
@@ -98,4 +106,7 @@
         </div>
     </div>
 </div>
+@stop
+@section('purchase')
+@include('_layouts.purchase')
 @stop

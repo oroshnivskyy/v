@@ -23,11 +23,6 @@ class Product extends Eloquent{
         'group_id' => array('required'),
         'image' => array('required',),
     ];
-    public static $messages = array(
-        'required' => 'Please enter :attribute',
-        'url.regex' => 'Wrong url, must be only a-z 1-9 and -',
-        'validation.integer' => ":attribute must be integer"
-    );
     
     public function group(){
         return $this->belongsTo('ProductGroup','group_id');

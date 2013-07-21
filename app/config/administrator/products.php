@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Products',
+    'form_width' => 400,
     'single' => 'product',
     'model' => 'Product',
     'columns' => [
@@ -37,7 +38,7 @@ return [
     ],
     'edit_fields' => [
         'name' => ['title' => 'Name', 'type' => 'text'],
-        'description' => ['title' => 'Description', 'type' => 'textarea'],
+        'description' => ['title' => 'Description', 'type' => 'wysiwyg'],
         'cost' => ['title' => 'Cost', 'type' => 'number', 'symbol'=>'₴', 'thousands_separator' => ' '],
         'size' => ['title' => 'Size', 'type' => 'text'],
         'count' => ['title' => 'Count', 'type' => 'text'],
@@ -47,7 +48,7 @@ return [
         'url' => ['title'=>'Url', 'type'=>'text'],
         'meta_keywords' => ['title'=>'Meta keywords', 'type'=>'textarea'],
         'meta_description' => ['title'=>'Meta Description', 'type'=>'textarea'],
-        'bottom_text' => ['title'=>'Bottom text', 'type'=>'textarea'],
+        'bottom_text' => ['title'=>'Bottom text', 'type'=>'wysiwyg'],
         'image_alt' => ['title'=>'Image alt', 'type'=>'text'],
         'image' => [
             'title' => 'Main image',

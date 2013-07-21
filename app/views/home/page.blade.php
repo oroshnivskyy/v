@@ -27,11 +27,11 @@
                             <div class="product-box-bg">
                                 <h3 class="product-name">
                                     <a href="{{route('product',[$product->group->url,$product->url])}}"
-                                       title="{{$product->title}}">{{$product->name}}</a></h3>
+                                       title="{{{$product->title}}}">{{{$product->name}}}</a></h3>
 
                                 <div class="price-box">
                             <span class="regular-price" id="product-price-50-new">
-                            <span class="price">{{$product->cost}} грн</span> </span>
+                            <span class="price">{{{$product->cost}}} грн</span> </span>
                                 </div>
                             </div>
                         </div>

@@ -9,7 +9,7 @@
                             <span>></span>
                         </li>
                         <li class="category4">
-                            <strong>{{$group->name}}</strong>
+                            <strong>{{{$group->name}}}</strong>
                         </li>
                     </ul>
                 </div>
@@ -30,15 +30,15 @@
                     @endif
                     <li class="item @if($i==1)first@endif @if($i==3)last@endif ">
                         <a href="{{route('product',[$product->group->url,$product->url])}}"
-                           title="{{$product->title}}" class="product-image"><img
+                           title="{{{$product->title}}}" class="product-image"><img
                                 src="{{ url($product->getImageUrl()) }}"
-                                width="300" height="300" alt="{{$product->image_alt}}"/></a>
+                                width="300" height="300" alt="{{{$product->image_alt}}}"/></a>
 
                         <div class="product-box-info">
                             <div class="product-box-bg">
                                 <h3 class="product-name">
                                     <a href="{{route('product',[$product->group->url,$product->url])}}"
-                                       title="{{$product->title}}">{{$product->name}}</a></h3>
+                                       title="{{{$product->title}}}">{{{$product->name}}}</a></h3>
 
                                 <div class="price-box">
                             <span class="regular-price" id="product-price-50-new">

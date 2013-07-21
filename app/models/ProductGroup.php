@@ -15,10 +15,6 @@ class ProductGroup extends Eloquent{
         'meta_keywords' => array('required',),
         'meta_description' => array('required',),
     ];
-    public static $messages = array(
-        'required' => 'Please enter :attribute',
-        'url.regex' => 'Wrong url, must be only a-z 1-9 and -',
-    );
     
     public function products(){
         return $this->hasMany('Product','group_id');
