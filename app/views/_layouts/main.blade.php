@@ -8,7 +8,7 @@
     <meta http-equiv="EXPIRES" content="{{date('D, j M Y H:I:S e', strtotime("+5 min"))}}">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <meta name="description" content="{{isset($metaDescription)?$metaDescription:'На нашем сайте Вы можете на свой вкус подобрать вышиванки для вас и ваших близких. Вышиванки по самым низким ценам. Вышиванки ручной работы'}}"/>
-    <meta name="keywords" content="{{isset($metaKeywords)?$metaKeywords:'Вышиванки, украинские вышиванки, вышиванки для детей, вышиванки для мужчин, вышиванки для женщин, вышиванки для девушек, вышиванки для мальчиков, ручная робота'}}"/>
+    <meta name="keywords" content="{{isset($metaKeywords)?$metaKeywords:'Вышиванки, украинские вышиванки, вышиванки для детей, вышиванки для мужчин, вышиванки для женщин, вышиванки для девушек, вышиванки для мальчиков, ручная робота, купить вышиванки, вышиванки в киеве, вышиванки ручной работы, вышиванки по низким ценам'}}"/>
     {{ HTML::style('css/default/favicon.ico',array('rel'=>'icon', 'type'=>'image/x-icon')) }}
     {{ HTML::style('css/default/favicon.ico',array('rel'=>'shortcut icon', 'type'=>'image/x-icon')) }}
     {{ HTML::style('//fonts.googleapis.com/css?family=Playfair+Display') }}
@@ -56,7 +56,7 @@
         VK.init({apiId: 3777082, onlyWidgets: true});
     </script>
     <script type="text/javascript">
-        VK.Widgets.Like("vk_like", {type: "vertical", height: 18});
+        VK.Widgets.Like("vk_like", {type: "mini", height: 18},"index");
     </script>
 </head>
 <body class="{{isset($bodyClass)?$bodyClass:'cms-index-index cms-home'}}">
