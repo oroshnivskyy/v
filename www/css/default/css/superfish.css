@@ -30,6 +30,7 @@
     text-decoration: none;
     position: relative;
     padding: 0;
+    text-decoration: underline;
 }
 
 .sf-menu>li>a>span {

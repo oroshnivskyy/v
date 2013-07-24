@@ -1130,7 +1130,7 @@ div.alert button:hover {
     display: inline;
     padding: 0;
     color: #737373;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     font-weight: bold;
     margin-right: 3px;
@@ -1719,7 +1719,7 @@ tr.summary-details-excluded {
 }
 
 .header {
-    padding: 0 4px 30px;
+    padding: 0 4px 10px;
     position: relative;
 }
 
@@ -3208,8 +3208,9 @@ input>x {
 .cms-home .products-grid li.item {
     position: relative;
     overflow: hidden;
-    margin-right: 25px;
+    margin-right: 22px;
     width: 300px;
+    border: 1px solid;
 }
 
 .cms-home .products-grid li.last {

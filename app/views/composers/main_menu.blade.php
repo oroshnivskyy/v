@@ -31,6 +31,9 @@
                 @endif
                 </li>
                 @endforeach
+                <li style="float:right;">
+                    <a href="{{route('delivery_and_payment')}}"><span>Доставка и оплата</span></a>
+                </li>
             </ul>
         </div>
         <div class="menu-footer">

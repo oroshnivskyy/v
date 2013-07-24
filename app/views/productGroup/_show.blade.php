@@ -1,5 +1,7 @@
 <div class="main-container col1-right-layout">
     <div class="container_24">
+        @include('_layouts.pager',['pager'=>$products])
+        </br>
         <div class="grid_24">
             <div class="main">
                 <div class="breadcrumbs">

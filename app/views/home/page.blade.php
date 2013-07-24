@@ -1,6 +1,8 @@
 <div class="main-container col1-layout">
     <div class="container_24">
         <div class="grid_24">
+            @include('_layouts.pager',['pager'=>$products])
+            </br>
             <div class="main">
                 <div class="col-main alpha grid_24 omega">
                     <div class="std">

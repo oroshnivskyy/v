@@ -1,4 +1,3 @@
-<div style=" position: relative; top: -25px;"><div id="vk_like"></div></div>
 <div class="header-container" style="margin-top: -25px;">
     <div class="container_24">
         <div class="grid_24">
@@ -11,9 +10,9 @@
                         --}}
                     </div>
                     <div class="quick-access">
-                        <div class="header-links">
+                        <div class="header-links" style="font-size: 15px; margin-top:20px">
                                     Электронный ящик:
-                                    <strong><a href="mailto:manager@vushuvanka.com.ua">manager@vushuvanka.com.ua</a></strong>
+                                    <strong><script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%6d%61%6e%61%67%65%72%40%76%75%73%68%75%76%61%6e%6b%61%2e%63%6f%6d%2e%75%61%22%3e%6d%61%6e%61%67%65%72%40%76%75%73%68%75%76%61%6e%6b%61%2e%63%6f%6d%2e%75%61%3c%2f%61%3e%27%29%3b'))</script></strong>
        
                             <?php /** Not visible
                             <ul class="links">
@@ -62,6 +61,9 @@
                     --}}
                 </div>
                 <div class="clear"></div>
+                <div style="position: relative; top: -30px; float: right; height:18px">
+                    <div id="vk_like"></div>
+                </div>
             </div>
         </div>
         <div class="clear"></div>
