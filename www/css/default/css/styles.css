@@ -11,7 +11,7 @@ html {
     width: 100%;
 }
 .menu-footer {
-    background: url(../images/bg.png) no-repeat scroll 0 bottom transparent;
+    background: url(/img/header-line.png) no-repeat scroll 0 bottom transparent;
     padding-bottom: 30px;
     margin: 0 0px 20px;
 }
@@ -33,7 +33,7 @@ body {
 
 body > .wrapper {
     position: relative;
-    padding: 32px 0 0;
+    padding: 15px 0 0;
 }
 
 .wrapper-tail {
@@ -262,7 +262,6 @@ ul, ol {
 .page {
     background: none repeat scroll center 0 #fff;
     margin: 0 auto 40px;
-    padding: 22px 0 0;
     text-align: left;
     width: 980px;
 }
@@ -1687,7 +1686,7 @@ tr.summary-details-excluded {
     float: left;
     display: block;
     text-decoration: none !important;
-    margin: -6px 0 0 2px;
+    margin: 0px 0 0 2px;
     width: 198px;
 }
 
@@ -1715,11 +1714,11 @@ tr.summary-details-excluded {
 
 /* Header ================================================================================ */
 .header-container {
-    background: url("../images/header-bg.png") no-repeat scroll 0 80px transparent
+    background: url("/img/header-line.png") no-repeat scroll 0 90px transparent
 }
 
 .header {
-    padding: 0 4px 10px;
+    padding: 0 4px 0px;
     position: relative;
 }
 
@@ -3208,7 +3207,7 @@ input>x {
 .cms-home .products-grid li.item {
     position: relative;
     overflow: hidden;
-    margin-right: 22px;
+    margin-right: 20px;
     width: 300px;
     border: 1px solid;
 }
@@ -3228,10 +3227,11 @@ input>x {
     position: absolute;
     bottom: -200px;
     left: 0;
+    border-radius: 5% 5% 0% 0%;
 }
 
 .cms-home .products-grid li.item .product-box-info .product-box-bg {
-    background: url(../images/bg2.gif) 0 bottom repeat-x;
+    background: url(/img/bg2.png) 0 bottom repeat-x;
     padding: 8px 20px 30px;
     width: 260px;
 }
@@ -3245,7 +3245,7 @@ input>x {
 }
 
 .cms-home .products-grid .product-name a {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
     color: #fff;
 }
@@ -8171,7 +8171,7 @@ input>x {
 }
 
 .footer-container {
-    background: url(../images/bg.png) 0 0 no-repeat;
+    background: url(/img/header-line.png) 0 0 no-repeat;
     padding: 40px 0 30px;
 }
 

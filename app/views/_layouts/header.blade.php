@@ -1,7 +1,14 @@
-<div class="header-container" style="margin-top: -25px;">
+<div class="header-container">
     <div class="container_24">
         <div class="grid_24">
             <div class="header">
+                <h1 class="logo"><strong>{{$title}}</strong>
+                    <a
+                        href="{{route('home')}}" title="{{$title}}" class="logo">
+                        <img src="/img/logo.gif" alt="{{$title}}"  style="float: left;"/>
+                        <span style="position: relative; top: 20px; left: 10px; color: black; font-style: oblique;">Украинская Вышиванка</span>
+                    </a>
+                </h1>
                 <div class="header-buttons">
                     <div class="row-1">
                         {{--
@@ -37,10 +44,7 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <h1 class="logo"><strong>{{$title}}</strong><a
-                        href="{{route('home')}}" title="{{$title}}" class="logo"><img
-                            src="/img/logo.jpg"
-                            alt="{{$title}}"/></a></h1>
+                
 
                 <div class="clear"></div>
                 <div class="row-2">
@@ -61,8 +65,13 @@
                     --}}
                 </div>
                 <div class="clear"></div>
-                <div style="position: relative; top: -30px; float: right; height:18px">
-                    <div id="vk_like"></div>
+                <div style="position: relative; top: -30px; float: right; height:20px; width: 270px">
+                    <div id="vk_like" style="float:left; width: 85px;"></div>
+                    <!-- Place this tag where you want the +1 button to render. -->
+                    <div class="g-plusone" data-size="medium" style="float:left; width: 70px;"></div>
+
+                    <div class="fb-like" data-href="http://vushuvanka.com.ua" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+                    <div id="fb-root"></div>
                 </div>
             </div>
         </div>
