@@ -10,4 +10,9 @@
 @stop
 @section('main')
 @include('home.page')
+<div class="menu-footer">
+</div>
+<div class="bottom-text">
+    {{$text}}
+</div>
 @stop

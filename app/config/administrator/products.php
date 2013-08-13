@@ -61,7 +61,56 @@ return [
                 [1500,1500,'fit', Product::uploadPath().'big/',100],
                 [210,210,'fit', Product::uploadPath() . 'medium/',100]
             ]
-        ]
+        ],
+        'image1' => [
+            'title' => 'Image 1',
+            'type' => 'image',
+            'naming' => 'random',
+            'location' => Product::uploadPath() . 'base/',
+            'size_limit' => 10,
+            'sizes' => [
+                [300,300,'fit', Product::uploadPath().'main/',100],
+                [1500,1500,'fit', Product::uploadPath().'big/',100],
+                [210,210,'fit', Product::uploadPath() . 'medium/',100]
+            ]
+        ],
+        'image2' => [
+            'title' => 'Image 2',
+            'type' => 'image',
+            'naming' => 'random',
+            'location' => Product::uploadPath() . 'base/',
+            'size_limit' => 10,
+            'sizes' => [
+                [300,300,'fit', Product::uploadPath().'main/',100],
+                [1500,1500,'fit', Product::uploadPath().'big/',100],
+                [210,210,'fit', Product::uploadPath() . 'medium/',100]
+            ]
+        ],
+        'image3' => [
+            'title' => 'Image 3',
+            'type' => 'image',
+            'naming' => 'random',
+            'location' => Product::uploadPath() . 'base/',
+            'size_limit' => 10,
+            'sizes' => [
+                [300,300,'fit', Product::uploadPath().'main/',100],
+                [1500,1500,'fit', Product::uploadPath().'big/',100],
+                [210,210,'fit', Product::uploadPath() . 'medium/',100]
+            ]
+        ],
+        'image4' => [
+            'title' => 'Image 4',
+            'type' => 'image',
+            'naming' => 'random',
+            'location' => Product::uploadPath() . 'base/',
+            'size_limit' => 10,
+            'sizes' => [
+                [300,300,'fit', Product::uploadPath().'main/',100],
+                [1500,1500,'fit', Product::uploadPath().'big/',100],
+                [210,210,'fit', Product::uploadPath() . 'medium/',100]
+            ]
+        ],
+        
     ],
     'action_permissions' => [
         'update' => true,

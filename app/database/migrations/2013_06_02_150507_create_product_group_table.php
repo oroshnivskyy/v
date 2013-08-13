@@ -21,7 +21,7 @@ class CreateProductGroupTable extends Migration
                 $table->string('url');
                 $table->string('image')->nullable();
                 $table->string('image_alt');
-                $table->string('bottom_text');
+                $table->text('bottom_text');
                 $table->integer('parent_id')->unsigned()->index();
                 $table->boolean('is_enabled');
                 $table->index('url');

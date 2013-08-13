@@ -7,7 +7,7 @@
                 <div class="breadcrumbs">
                     <ul>
                         <li class="home">
-                            <a HREF="{{route('home')}}" title="Ити на домашнюю страницу">Домой</a>
+                            <a href="{{route('home')}}" title="Ити на домашнюю страницу">На главную</a>
                             <span>></span>
                         </li>
                         <li class="cms_page">

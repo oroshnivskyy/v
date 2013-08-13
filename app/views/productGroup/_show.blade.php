@@ -7,7 +7,7 @@
                 <div class="breadcrumbs">
                     <ul>
                         <li class="home">
-                            <a href="{{route('home')}}" title="Ити домой">Домой</a>
+                            <a href="{{route('home')}}" title="Ити домой">На главную</a>
                             <span>></span>
                         </li>
                         <li class="category4">

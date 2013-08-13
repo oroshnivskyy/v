@@ -71,10 +71,7 @@
     ga('send', 'pageview');
 
 </script>
-<a href="http://metrika.yandex.ru/stat/?id=21853213&amp;from=informer"
-   target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/21853213/1_0_FCDCFCFF_DCBCDCFF_0_pageviews"
-                                       style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" onclick="try{Ya.Metrika.informer({i:this,id:21853213,lang:'ru'});return false}catch(e){}"/></a>
-
+<!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {

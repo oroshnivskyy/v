@@ -1136,8 +1136,16 @@ div.alert button:hover {
 }
 
 .pager .pages li a {
+    background-color: grey;
+    border: medium hidden;
+    border-radius: 10% 10% 10% 10%;
+    color: white;
+    display: inline-block;
+    height: 22px;
+    padding-top: 5px;
+    text-align: center;
     text-decoration: none;
-    color: #8a8989;
+    width: 30px;
 }
 
 .pager .pages li a:hover {
@@ -3210,8 +3218,11 @@ input>x {
     margin-right: 20px;
     width: 300px;
     border: 1px solid;
+    border-radius: 5%;
 }
-
+.cms-home .products-grid li.item:hover {
+    border-color: #6e0000;
+}
 .cms-home .products-grid li.last {
     margin-right: 0;
 }
@@ -8675,4 +8686,44 @@ span.opened {
     overflow: hidden;
 }
 
-/* ======================================================================================= */
+/** do not delete */
+a#logo-image div {
+    background: url('/img/logo.png') no-repeat scroll 0 bottom transparent;
+    width: 87px;
+    height: 87px;
+    float: left;
+}
+
+a#logo-image:hover div {
+    background: url('/img/logo1.png') no-repeat scroll 0 bottom transparent;
+}
+div.bottom-text{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+div.product-images-thumbnails{
+    text-align: left;
+    margin-top: 5px;
+}
+div.product-images-thumbnails img {
+    width: 50px;
+    border: 1px solid;
+    cursor: pointer;
+    margin-right: 9px;
+}
+div.product-images-thumbnails img:last-child {
+    margin-right: 0px;
+}
+a.product-image-hidden{
+    display: none;
+}
+a.product-image-visible{
+    display: block;
+}

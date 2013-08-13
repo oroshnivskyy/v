@@ -32,17 +32,21 @@ class Product extends Eloquent{
         return $this->hasMany('ProductImage', 'product_id');
     }
 
-    public function getImageUrl(){
-        return static::imageWebPath().'main/'.$this->image;
+    public function getImageUrl($name=null){
+        $image = $name?$this->$name:$this->image;
+        return static::imageWebPath().'main/'.$image;
     }
-    public function getBaseImageUrl(){
-        return static::imageWebPath().'main/'.$this->image;
+    public function getBaseImageUrl($name=null){
+        $image = $name?$this->$name:$this->image;
+        return static::imageWebPath().'main/'.$image;
     }
-    public function getBigImageUrl(){
-        return static::imageWebPath().'big/'.$this->image;
+    public function getBigImageUrl($name=null){
+        $image = $name?$this->$name:$this->image;
+        return static::imageWebPath().'big/'.$image;
     }
-    public function getMediumImageUrl(){
-        return static::imageWebPath().'medium/'.$this->image;
+    public function getMediumImageUrl($name=null){
+        $image = $name?$this->$name:$this->image;
+        return static::imageWebPath().'medium/'.$image;
     }
     
     public static function imageWebPath(){

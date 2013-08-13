@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>{{{$title}}}</title>
-    <link rel="icon" type="image/ico" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <meta http-equiv="cache-control" content="public">
     <meta http-equiv="EXPIRES" content="{{date('D, j M Y H:I:S e', strtotime("+5 min"))}}">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">

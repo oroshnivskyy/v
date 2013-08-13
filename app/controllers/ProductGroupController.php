@@ -10,7 +10,9 @@ class ProductGroupController extends BaseController {
      */
     public function show($groupUrl)
     {
-        $group = ProductGroup::where('url','=',$groupUrl)->with('childGroups')->first();
+        $group = Cache::rememberForever('product-group-'.$groupUrl, function() use($groupUrl){
+            return ProductGroup::where('url','=',$groupUrl)->with('childGroups')->first();
+        });
         $products = Product::where('group_id','=',$group->id);
         if(count($group->childGroups)>0){
             $groupIds = array_map(function($group){ return $group['id'];}, $group->childGroups->toArray());

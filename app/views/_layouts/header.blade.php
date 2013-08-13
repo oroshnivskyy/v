@@ -3,9 +3,9 @@
         <div class="grid_24">
             <div class="header">
                 <h1 class="logo"><strong>{{$title}}</strong>
-                    <a
+                    <a id="logo-image"
                         href="{{route('home')}}" title="{{$title}}" class="logo">
-                        <img src="/img/logo.gif" alt="{{$title}}"  style="float: left;"/>
+                        <div alt="{{$title}}" ></div>
                         <span style="position: relative; top: 20px; left: 10px; color: black; font-style: oblique;">Украинская Вышиванка</span>
                     </a>
                 </h1>
@@ -68,9 +68,9 @@
                 <div style="position: relative; top: -30px; float: right; height:20px; width: 270px">
                     <div id="vk_like" style="float:left; width: 85px;"></div>
                     <!-- Place this tag where you want the +1 button to render. -->
-                    <div class="g-plusone" data-size="medium" style="float:left; width: 70px;"></div>
+                    <div class="g-plusone" data-size="medium" style="float:left; width: 70px;" data-href="http://vushuvanka.com.ua"></div>
 
-                    <div class="fb-like" data-href="http://vushuvanka.com.ua" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+                    <div class="fb-like" style="z-index:100;" data-href="http://vushuvanka.com.ua" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
                     <div id="fb-root"></div>
                 </div>
             </div>

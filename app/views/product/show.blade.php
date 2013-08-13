@@ -4,6 +4,26 @@
 <script>
     $(function () {
         $('a#image_zoom').jqZoomIt();
+            var previews 	= jQuery('.product-image a'),
+                thumbnails 	= jQuery('div.product-images-thumbnails img');
+            $('a#image_zoom').jqZoomIt({
+                init : function(){
+                    $( this ).addClass('zoomIt_loaded');
+                }
+            });
+        $(thumbnails).click(function(e){
+                e.preventDefault();
+            $(thumbnails).css('border-color','#6A6969');
+            $(this ).css('border-color','black');
+            $(previews).removeClass('product-image-visible').addClass('product-image-hidden');
+                var key = $.inArray( this, thumbnails );
+            $(previews[key]).removeClass('a.product-image-hidden').addClass('product-image-visible')
+                if( !$(previews[key]).hasClass('zoomIt_loaded') ){
+                    $(previews[key]).jqZoomIt();
+                    $(previews[key]).addClass('zoomIt_loaded');
+                }
+            })
+
     });
 </script>
 @stop
@@ -16,7 +36,7 @@
                     <div class="breadcrumbs" style="margin-top: 30px;">
                         <ul>
                             <li class="home">
-                                <a href="{{route('home')}}" title="Переити на домашнюю страницу">Домой</a>
+                                <a href="{{route('home')}}" title="Переити на домашнюю страницу">На главную</a>
                                 <span>></span>
                             </li>
                             <li>
@@ -41,11 +61,37 @@
                                             </div>
                                             <div class="product-img-box">
                                                 <p class="product-image">
-                                                    <a id="image_zoom" style="display: block;"
+                                                    <a id="image_zoom" class="product-image-visible" target="_blank"
                                                        href="{{$product->getBigImageUrl()}}">
                                                         <img class="big" src="{{$product->getImageUrl()}}"
-                                                             alt='' title="{{{$product->image_alt}}}"/>
+                                                             alt='{{{$product->image_alt}}}' title="{{{$product->image_alt}}}"/>
                                                     </a>
+                                                <?php for($i=1;$i<=4;$i++): ?>
+                                                    <?php
+                                                    $imageName = 'image'.$i;
+                                                    if(empty($product->$imageName)) break;
+                                                    ?>
+                                                    <a class="product-image-hidden" target="_blank"
+                                                       href="{{$product->getBigImageUrl('image'.$i)}}">
+                                                        <img class="big" src="{{$product->getImageUrl($imageName)}}"
+                                                             title="{{{$product->image_alt}}}"/>
+                                                    </a>
+                                                <?php endfor; ?>
+                                                
+                                                    <div class="product-images-thumbnails">
+                                                        <img style="border-color: black;"
+                                                            class="small" src="{{$product->getImageUrl()}}"
+                                                            title="{{{$product->image_alt}}}"/>
+                                                    <?php for($i=1;$i<=4;$i++): ?>
+                                                        <?php 
+                                                            $imageName = 'image'.$i;
+                                                            if(empty($product->$imageName)) break;
+                                                        ?>
+                                                        <img
+                                                             class="small" src="{{$product->getImageUrl($imageName)}}"
+                                                             title="{{{$product->image_alt}}}"/>
+                                                    <?php endfor; ?>
+                                                    </div>
                                                 </p>
                                                 {{--@include('product.more_views')--}}
                                             </div>

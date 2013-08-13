@@ -20,7 +20,10 @@ class HomeController extends BaseController
             return View::make('home.page', ['products' => $products]);
         }
 
-        return $this->renderView('home.index', ['products' => $products])
+        $text = Cache::rememberForever('main-page', function(){
+            return Page::where('name','=','main-page')->first(['text'])->text;
+        });
+        return $this->renderView('home.index', ['products' => $products, 'text'=>$text])
             ->with('title', 'Вышиванки для мужчин женщин и детей');
     }
 

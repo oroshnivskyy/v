@@ -4,6 +4,7 @@ var Pager = function(){
             var page =$(this).data('page');
             $.get(route, {page: page}, function(data){
                 $('#main').html(data);
+                effects.makeHover();
             })
             return false;
         });

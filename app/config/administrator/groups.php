@@ -3,6 +3,7 @@
 return [
     'title' => 'Groups',
     'single' => 'group',
+    'form_width' => 700,
     'model' => 'ProductGroup',
     'columns' => [
         'name' => [
@@ -33,7 +34,7 @@ return [
         'url' => ['title'=>'Url', 'type'=>'text'],
         'meta_keywords' => ['title'=>'Meta keywords', 'type'=>'textarea'],
         'meta_description' => ['title'=>'Meta Description', 'type'=>'textarea'],
-        'bottom_text' => ['title'=>'Bottom text', 'type'=>'textarea'],
+        'bottom_text' => ['title'=>'Bottom text', 'type'=>'wysiwyg'],
         'image_alt' => ['title'=>'Image alt', 'type'=>'text'],
         'image' => [
             'title' => 'Image',
