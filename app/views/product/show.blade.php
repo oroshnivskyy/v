@@ -145,7 +145,7 @@
                                 {{-- @include('product.interested_in') --}}
                             </div>
                         </div>
-                        {{-- @include('product.related') --}}
+                         @include('product.related')
                     </div>
                 </div>
             </div>
